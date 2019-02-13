@@ -1,0 +1,19 @@
+@import "../../../scss/variables.scss";
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $heightHeaderMobile;
+  width: 100%;
+  z-index: $Zmenu;
+}
+.st0{
+  fill:#FFFFFF;
+}
+.st1{
+  fill:none;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;
+}
+.st2{
+  fill:#CCCCCC;
+}
