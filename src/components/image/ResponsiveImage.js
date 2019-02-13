@@ -14,13 +14,11 @@ class ResponsiveImage extends React.Component {
       case (size > 768):
         sizeImge = large
         break;
-      case (size > 300):
+      case (size > 376):
         sizeImge = medium
         break;
-      case (size < 300):
-        sizeImge = small
-        break;
       default:
+        sizeImge = small
         break;
     }
     return (

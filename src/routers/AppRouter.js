@@ -6,7 +6,7 @@ const AppRouter = () => (
   
   <BrowserRouter>
     <div className='container-fluid'>
-        <Header/>
+        {/* <header/> */}
         <Switch>
             <Route exact path="/" component={Home} />
             {/* <Route path="/aboutus" component={AboutUs} /> */}

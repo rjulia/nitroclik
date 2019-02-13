@@ -9,32 +9,43 @@ import {
 } from 'reactstrap';
 import { ResponsiveImage } from "../index.components";
 
-const imagesHome = {
-  small: './assets/images/home_one_300.jpg',
+const imagesHomeOne = {
+  small: './assets/images/home_one_340.jpg',
   medium: './assets/images/home_one_768.jpg',
   large: './assets/images/home_one_1280.jpg',
   xlarge: './assets/images/home_one_3200.jpg'
 }
 
+const imagesHomeTwo = {
+  small: './assets/images/home_two_340.jpg',
+  medium: './assets/images/home_two_768.jpg',
+  large: './assets/images/home_two_1280.jpg',
+  xlarge: './assets/images/home_two_3200.jpg'
+}
+
 const items = [
   {
-    images: imagesHome,
+    images: imagesHomeOne,
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
   {
-    images: imagesHome,
+    images: imagesHomeTwo,
     altText: 'Slide 2',
     caption: 'Slide 2'
   },
   {
-    images: imagesHome,
+    images: imagesHomeOne,
     altText: 'Slide 3',
     caption: 'Slide 3'
   }
 ];
 const ResponsiveImageW100 = styled(ResponsiveImage)`
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    @media (min-width: 576px) {
+      width: 100%;
+    }
 `;
 class CarouselGroup extends Component {
   constructor(props) {
