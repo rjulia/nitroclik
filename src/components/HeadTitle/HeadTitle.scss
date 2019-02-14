@@ -1,0 +1,30 @@
+@import "../../scss/variables.scss";
+
+
+.headTitle {
+
+  border: 5px solid $white;
+  padding: 0 5px;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+
+
+  .headTitle__text {
+    font-size: 3.5rem;
+    font-family: $outstanding;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    color: $white;
+  }
+}
+
+.headTitle__subtitle {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family: $general;
+  font-size: 1.5rem;
+  color: $mainColor;
+
+}

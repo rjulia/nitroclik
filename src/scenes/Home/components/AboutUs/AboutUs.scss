@@ -1,0 +1,9 @@
+@import '../../../../scss/variables.scss';
+
+.about-us{
+  height: 100vh;
+  padding-top: $heightHeaderMobile;
+  @media (min-width: 576px) {
+    padding-top: $heightHeaderDesktop;
+  }
+}

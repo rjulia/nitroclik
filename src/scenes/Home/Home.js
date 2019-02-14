@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HeroImage } from './components/index';
+import { HeroImage, AboutUs } from './components/index';
 
 
 // imagesHome
@@ -9,6 +9,7 @@ class Home extends Component {
     return (
       <div className="row">
         <HeroImage/>
+        <AboutUs/>
       </div>
     );
   }

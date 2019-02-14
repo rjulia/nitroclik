@@ -1,24 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Menu } from '../../../assets/index.assets';
 import { connect } from 'react-redux';
 import { isopen } from "../../../services/actions/actions";
 import styled from 'styled-components';
 
 const IconMenu = styled(Menu)`
-    svg {
+    svg{
       fill: #fff;
-      width: 2rem;
-    }
+      width: 2.5rem;
+    }  
 `;
-class MainMenu extends Component {
-  render() {
+
+const MainMenuMobile = (props) => {
+  
+    const toOpen = () => props.dispatch(isopen(true))
+
     return (
-      <button {...this.props} onClick={isopen}>
+      <button className={props.className} onClick={toOpen}>
         <IconMenu/>
       </button>
     );
-  }
+  
 }
 
 
-export default connect()(MainMenu);
+export default connect()(MainMenuMobile);

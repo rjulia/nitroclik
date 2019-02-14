@@ -1,19 +1,90 @@
 @import "../../../scss/variables.scss";
 
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: $heightHeaderMobile;
+.container__header {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
   width: 100%;
   z-index: $Zmenu;
+  background-color: transparent;
+  height: $heightHeaderMobile;
+  transition: background-color 0.4s ease-out;
+  &.dark {
+    background-color: rgba($color: #000000, $alpha: 0.5)
+  }
+  @media (min-width: 576px) {
+    height: $heightHeaderDesktop;
+  }
+
+  .header { 
+    top: 0;
+    left: 0;
+    position: relative;
+    p {
+      font-family: 'Lato', sans-serif;
+      color: $white;
+  
+    }
+    &__menu--desktop {
+      display: none;
+      position: absolute;
+      right: 0;
+      height: $heightHeaderMobile;
+      align-items: center;
+
+      @media (min-width: 576px) {
+
+        display: flex;
+        height: $heightHeaderDesktop;
+      }
+      .menu__list {
+        display: flex;
+        justify-content: space-between;
+        .menu__list--item {
+          min-width: 100px;
+          color: $white;
+          text-align: center;
+          display: inline-block;
+          padding: 0 10px 3px;
+
+          a {
+            color: $white;
+            font-size: 1.2rem;
+            font-family: 'Lato', sans-serif;
+            text-decoration: none;
+          }
+          &:hover {
+            background: rgba($white, 0.7);
+            a {
+              color: $hoverManiColor;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-.st0{
-  fill:#FFFFFF;
+
+.logo {
+  width: 50%;
+    top: 10px;
+    position: absolute;
+    left: 10px;
+
+  @media (min-width: 576px) {
+    width: 25%;
+  }
+  .logo__line--one {
+    fill:$white
+  }
+  .logo__line--two {
+    fill: none;
+    stroke: $white;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+  }
+  .logo__line--three{
+    fill: $secondaryColor;
+  }
 }
-.st1{
-  fill:none;stroke:#FFFFFF;stroke-width:6;stroke-miterlimit:10;
-}
-.st2{
-  fill:#CCCCCC;
-}
+

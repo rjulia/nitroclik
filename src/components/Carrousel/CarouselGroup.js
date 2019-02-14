@@ -4,11 +4,10 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+  CarouselIndicators
 } from 'reactstrap';
-import { ResponsiveImage } from "../index.components";
-
+import { ResponsiveImage,  } from "../index.components";
+import BoxTitle from "../HeadTitle/BoxTitle";
 const imagesHomeOne = {
   small: './assets/images/home_one_340.jpg',
   medium: './assets/images/home_one_768.jpg',
@@ -23,23 +22,38 @@ const imagesHomeTwo = {
   xlarge: './assets/images/home_two_3200.jpg'
 }
 
+const imagesHomeThree = {
+  small: './assets/images/home_three_340.jpg',
+  medium: './assets/images/home_three_768.jpg',
+  large: './assets/images/home_three_1280.jpg',
+  xlarge: './assets/images/home_three_3200.jpg'
+}
+
 const items = [
   {
     images: imagesHomeOne,
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    altText: 'Innovate',
+    caption: 'Innovate',
+    subtitle: 'we never stop to learn to offer the best for your project'
+  },
+  {
+    images: imagesHomeThree,
+    altText: 'Create',
+    caption: 'Create',
+    subtitle: 'we believe together can create what we want'
   },
   {
     images: imagesHomeTwo,
-    altText: 'Slide 2',
-    caption: 'Slide 2'
-  },
-  {
-    images: imagesHomeOne,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: 'Build',
+    caption: 'Build',
+    subtitle: 'wwe provide for you the best technology in the market'
   }
 ];
+const HeadTitleCarousel = styled(BoxTitle)`
+    position: absolute;
+    left: 22%;
+    top: 200px;
+`;
 const ResponsiveImageW100 = styled(ResponsiveImage)`
     width: 100vw;
     height: 100vh;
@@ -50,7 +64,7 @@ const ResponsiveImageW100 = styled(ResponsiveImage)`
 class CarouselGroup extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeIndex: 0 };
+    this.state = { activeIndex: 0, playing: true  };
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
     this.goToIndex = this.goToIndex.bind(this);
@@ -85,16 +99,16 @@ class CarouselGroup extends Component {
 
   render() {
     const { activeIndex } = this.state;
-
     const slides = items.map((item, idx) => {
       return (
         <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
-          key={idx}
+          key={idx + 13}
         >
+          <HeadTitleCarousel title={item.caption} subtitle={item.subtitle}/>
           <ResponsiveImageW100 images={item.images}/>
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
         </CarouselItem>
       );
     });
@@ -104,7 +118,13 @@ class CarouselGroup extends Component {
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
+        keyboard={false}
+        pause={true}
+        ride="carousel"
+        interval={this.state.playing ? 7000 : false}
+        slide={true}
       >
+        
         <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
         {slides}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
