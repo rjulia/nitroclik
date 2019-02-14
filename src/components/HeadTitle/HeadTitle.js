@@ -3,10 +3,19 @@ import "./HeadTitle.scss"
 
 
 const HeadTitle = (props) => {
-  const {title}  = props;
+  const {title, color, lineColor}  = props;
+
+  const divStyle = {
+    borderColor: lineColor
+  };
+
+  const pStyle = {
+    color: color,
+  };
+  
   return (
-    <p className="headTitle">
-      <span className="headTitle__text">{title}</span>
+    <p className="headTitle" style={divStyle}>
+      <span className="headTitle__text" style={pStyle}>{title}</span>
     </p>
   );
 };

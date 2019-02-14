@@ -7,13 +7,13 @@
   width: 100%;
   z-index: $Zmenu;
   background-color: transparent;
-  height: $heightHeaderMobile;
+  height: $heightHeaderMobile + px;
   transition: background-color 0.4s ease-out;
   &.dark {
     background-color: rgba($color: #000000, $alpha: 0.5)
   }
   @media (min-width: 576px) {
-    height: $heightHeaderDesktop;
+    height: $heightHeaderDesktop + px;
   }
 
   .header { 
@@ -29,13 +29,13 @@
       display: none;
       position: absolute;
       right: 0;
-      height: $heightHeaderMobile;
+      height: $heightHeaderMobile + px;
       align-items: center;
 
       @media (min-width: 576px) {
 
         display: flex;
-        height: $heightHeaderDesktop;
+        height: $heightHeaderDesktop + px;
       }
       .menu__list {
         display: flex;

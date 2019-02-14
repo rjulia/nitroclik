@@ -46,13 +46,17 @@ const items = [
     images: imagesHomeTwo,
     altText: 'Build',
     caption: 'Build',
-    subtitle: 'wwe provide for you the best technology in the market'
+    subtitle: 'we provide for you the best technology in the market'
   }
 ];
 const HeadTitleCarousel = styled(BoxTitle)`
     position: absolute;
-    left: 22%;
-    top: 200px;
+    left: 5%;
+    top: 80px;
+    @media (min-width: 576px) {
+      left: 22%;
+      top: 200px;
+    }
 `;
 const ResponsiveImageW100 = styled(ResponsiveImage)`
     width: 100vw;
@@ -119,7 +123,7 @@ class CarouselGroup extends Component {
         next={this.next}
         previous={this.previous}
         keyboard={false}
-        pause={true}
+        
         ride="carousel"
         interval={this.state.playing ? 7000 : false}
         slide={true}

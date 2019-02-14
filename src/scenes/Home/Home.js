@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HeroImage, AboutUs } from './components/index';
+import { HeroImage, AboutUs, HowWeDo, ContactUs } from './components/index';
 
 
 // imagesHome
@@ -8,8 +8,14 @@ class Home extends Component {
   render() {
     return (
       <div className="row">
-        <HeroImage/>
-        <AboutUs/>
+          <HeroImage/>
+        <div className="container">
+          <AboutUs/>
+        </div>
+          <HowWeDo/>
+        <div className="container">
+          <ContactUs/>
+        </div>   
       </div>
     );
   }

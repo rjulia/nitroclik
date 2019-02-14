@@ -2,8 +2,22 @@
 
 .about-us{
   height: 100vh;
-  padding-top: $heightHeaderMobile;
+  padding-top: $heightHeaderMobile + px;
   @media (min-width: 576px) {
-    padding-top: $heightHeaderDesktop;
+    padding-top: $heightHeaderDesktop + 20 + px;
+  }
+  .about-us__img--img{
+    width: 100%;
+    height: auto;
+  }
+  .about-us__txt {
+    text-align: center;
+    padding: 50px;
+
+    .about-us__txt--parf{
+      font-family: $general;
+      font-size: 1.2rem;
+
+    }
   }
 }
