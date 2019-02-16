@@ -2,9 +2,69 @@
 
 .how-we-do {
   height: 100vh;
+  position: relative;
+  padding: 0;
+  overflow-y: hidden;
+  flex-direction: column;
   padding-top: $heightHeaderMobile + px;
   @media (min-width: 576px) {
-    padding-top: $heightHeaderDesktop + px;
+    padding-top: $heightHeaderDesktop + 20 + px;
   }
+  .how-we-do__container {
+    height: 100%;
+  }
+  .how-we-do__img{
+    width: 100%;
+    position: absolute;
+    z-index: $bottomImg;
+    top: 0;
+    left: 0;
+  }
+}
+
+.square-how {
+  width: 100%;
+  .square-how__block{
+    background-color: $mainColor;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+
+  }
+  .square-how__frame {
+    border: 3px solid $white;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .square-how__text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 700;
+  }
+  .icon {
+    height: 190px;
+    position: relative;
+    display: block;
+    margin: 5px 0 0 0;
+    #launch,
+    #idea,
+    #Test {
+      transform: scale(3) translateY(45%);
+    }
+  }
+  @media (min-width: 576px) {
+    .square-how__block{
+      width: 300px;
+      height: 300px;
   
+    }
+    .square-how__frame {
+      border: 3px solid $white;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

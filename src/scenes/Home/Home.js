@@ -7,7 +7,7 @@ import { HeroImage, AboutUs, HowWeDo, ContactUs } from './components/index';
 class Home extends Component {
   render() {
     return (
-      <div className="row">
+      <div className="d-flex row flex-column">
           <HeroImage/>
         <div className="container">
           <AboutUs/>
