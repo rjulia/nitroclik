@@ -44,16 +44,25 @@ const HowWeDo = () => {
                 <SquareHow 
                   icon={<Idea className={'icon'}/>} 
                   text={'PLANNING AND DESIGNING'}/>
+                <div className="how-we-do__commet">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
+                </div>
             </div>
             <div className="col-12 col-md-4">
                 <SquareHow 
                   icon={<Launch className={'icon'}/>}
                   text={'BUILDING AND DEVELOPING'}/>
+                <div className="how-we-do__commet">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
+                </div>
             </div>
             <div className="col-12 col-md-4">
                 <SquareHow 
                   icon={<Test className={'icon'}/>}
                   text={'TESTING AND DELIVERY'}/>
+                <div className="how-we-do__commet">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
+                </div>
             </div>
           </div>
         </div>

@@ -15,6 +15,7 @@
     padding: 20px 10px;
 
     .about-us__txt--parf{
+      color: $text;
       font-family: $general;
       font-size: 1rem;
 
@@ -22,10 +23,11 @@
   }
   @media (min-width: 576px) {
     .about-us__txt {
-      padding: 50px;
+      padding: 40px;
   
       .about-us__txt--parf{
-        font-size: 1.2rem; 
+        font-size: 1.3rem; 
+
       }
     }  
   }

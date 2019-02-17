@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Header, Home,  AboutUs, Services, Blog, BlogDetail, ContactUS, NotFound } from "../scenes/index.scenes";
+import { Header, Home, Footer,  AboutUs, Services, Blog, BlogDetail, ContactUS, NotFound } from "../scenes/index.scenes";
 
 const AppRouter = () => (
   
@@ -16,6 +16,7 @@ const AppRouter = () => (
             <Route path="/contactus" component={ContactUS} />                
             <Route component={NotFound} /> */}
         </Switch>
+        <Footer/>
     </div>
   </BrowserRouter>
   
