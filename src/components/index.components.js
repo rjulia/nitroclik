@@ -1,9 +1,14 @@
-export { default as ResponsiveImage } from './image/ResponsiveImage';
+export { default as ResponsiveImage } from './Image/ResponsiveImage';
 export { default as CarouselGroup } from './Carrousel/CarouselGroup';
 export { default as HeadTitle } from './HeadTitle/HeadTitle'; 
-export { default as Launch } from './icons/Launch'; 
-export { default as Idea } from './icons/Idea'; 
-export { default as Test } from './icons/Test'; 
+export { default as Launch } from './Icons/Launch'; 
+export { default as Idea } from './Icons/Idea'; 
+export { default as Test } from './Icons/Test'; 
+export { default as Input } from './Forms/Input/Input'; 
+export { default as ContactForm } from './Forms/ContactForm/ContactForm'; 
+
+
+
 
 
 

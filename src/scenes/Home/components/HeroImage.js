@@ -1,5 +1,5 @@
 import React from 'react';
-import { CarouselGroup } from "../../../components/index.components.js";
+import { CarouselGroup } from "../../../Components/index.components.js";
 
 const HeroImage = () => {
   return (

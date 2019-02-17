@@ -1,7 +1,7 @@
 import React from 'react';
-import { Menu } from '../../../assets/index.assets';
+import { Menu } from '../../../Assets/index.assets';
 import { connect } from 'react-redux';
-import { isopen } from "../../../services/actions/actions";
+import { isopen } from "../../../Services/Actions/Actions";
 import styled from 'styled-components';
 
 const IconMenu = styled(Menu)`

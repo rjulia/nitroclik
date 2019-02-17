@@ -1,4 +1,4 @@
-export { default as IntagramIcon } from './icons/IntagramIcon';
-export { default as LinkedinIcon } from './icons/LinkedinIcon';
-export { default as Menu } from './icons/Menu';
+export { default as IntagramIcon } from './Icons/IntagramIcon';
+export { default as LinkedinIcon } from './Icons/LinkedinIcon';
+export { default as Menu } from './Icons/Menu';
 

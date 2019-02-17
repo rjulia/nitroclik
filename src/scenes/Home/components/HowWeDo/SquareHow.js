@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Launch } from "../../../../components/index.components";
+
 class SquareHow extends Component {
   render() {
     return (

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './AboutUs.scss';
-import { HeadTitle } from "../../../../components/index.components";
+import { HeadTitle } from "../../../../Components/index.components";
 
 class AboutUS extends Component {
   render() {

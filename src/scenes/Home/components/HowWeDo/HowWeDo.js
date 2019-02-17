@@ -1,9 +1,9 @@
 import React from 'react';
 import './HowWeDo.scss';
-import { ResponsiveImage, HeadTitle } from "../../../../components/index.components";
+import { ResponsiveImage, HeadTitle } from "../../../../Components/index.components";
 import styled from 'styled-components';
 import SquareHow from "./SquareHow";
-import { Launch, Idea, Test} from "../../../../components/index.components";
+import { Launch, Idea, Test} from "../../../../Components/index.components";
 
 
 const images = {
