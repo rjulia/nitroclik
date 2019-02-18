@@ -8,7 +8,7 @@ class AboutUS extends Component {
       <div className="about-us col-12 d-flex justify-content-center flex-column">
         <div className="row">
           <div className="col-12 d-flex justify-content-center mb-3 mb-md-5">
-            <HeadTitle title={'About Us'} color={'#FFA59E'} lineColor={'#FFA59E'}/>
+            <HeadTitle title={'WE ...'} color={'#FFA59E'} lineColor={'#FFA59E'}/>
 
           </div>
         </div>
@@ -18,8 +18,13 @@ class AboutUS extends Component {
             
             </div>
             <div className="col-12 col-md-6 about-us__txt">
-                <p className="about-us__txt--parf"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
-                <p className="about-us__txt--parf"> Ad dolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae. Rerum sed nulla eum vero expedita ex delectus voluptates rem at neque quos facere sequi unde optio aliquam!</p>
+                <h3>... are consulting</h3>
+                <p className="about-us__txt--parf"> We transform businesses and help our clients outpace digital disruption—by designing new business models and enhancing existing ones.</p>
+          
+                <h3>... work end-to-end</h3>
+
+                <p className="about-us__txt--parf"> We help clients develop more successful products and propositions</p>
+                <p className="about-us__txt--parf"> Using an end-to-end process we call Meaningful Design that brings together the best of Design Thinking, Lean Startup and Agile.</p>
                 
             
             </div>

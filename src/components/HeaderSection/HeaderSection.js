@@ -16,20 +16,15 @@ const ResponsiveImageW100 = styled(ResponsiveImage)`
       width: 100%;
     }
 `;
-const HeadTitleHeaderSection = styled(HeadTitle)`
-    margin: 0 auto;
-
-`;
 
 class HeaderSection extends Component {
   render() {
-    console.log(this.props)
-    const {images, title, subtitle} = this.props
+    const {images, title, subtitle} = this.props;
     return (
       <div className="header-section__container">
          <ResponsiveImageW100 images={images}/>
         <div className="header-section__title">
-          <HeadTitleHeaderSection title={title}/>
+          <HeadTitle color={''} lineColor={''} title={title}/>
           <h1>{subtitle}</h1>
         </div>
       </div>

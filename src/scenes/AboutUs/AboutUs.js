@@ -19,6 +19,7 @@ class AboutUs extends Component {
         title={title}
         subtitle = {subtitle}
         />
+        
       </div>
     );
   }

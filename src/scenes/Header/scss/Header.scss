@@ -20,10 +20,14 @@
     top: 0;
     left: 0;
     position: relative;
+    height: $heightHeaderMobile + px;
     p {
       font-family: 'Lato', sans-serif;
       color: $white;
   
+    }
+    @media (min-width: 576px) {
+      height: $heightHeaderDesktop + px;
     }
     &__menu--desktop {
       display: none;
@@ -40,6 +44,7 @@
       .menu__list {
         display: flex;
         justify-content: space-between;
+        margin: 0;
         .menu__list--item {
           min-width: 100px;
           color: $white;

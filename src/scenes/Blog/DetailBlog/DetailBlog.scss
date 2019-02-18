@@ -1,0 +1,44 @@
+@import '../../../Scss/variables.scss';
+
+.detail-blog {
+  margin-top: $heightHeaderMobile + px;
+  min-height: 100vh;
+  text-align: center;
+  .detail-blog__title{
+    font-size: 3rem;
+    color: $mainColor;
+    text-transform: uppercase;
+    font-family: $outstanding;
+    font-weight: 300;
+    margin: 4rem 0;
+  }
+  .detail-blog__sortdef{
+    max-width: 50%;
+    margin: 5px auto 30px;
+    font-family: $text;
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+
+  .detail-blog__text{
+    max-width: 50%;
+    margin: 30px auto 30px;
+    font-family: $text;
+    font-size: 1.1rem;
+    font-style: normal;
+  }
+  .detail-blog__img {
+    max-width: 50%;
+    margin: 0 auto;
+    height: 300px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      transform: translateY(-20%);
+      
+    }
+  }
+  @media (min-width: 576px) {
+    margin-top: $heightHeaderDesktop + px;
+  }
+}

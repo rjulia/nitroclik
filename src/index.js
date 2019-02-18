@@ -6,9 +6,12 @@ import AppRouter from './Routers/AppRouter';
 import { Provider } from 'react-redux';
 import store from './Store/Store';
 
+
 const template = (
     <Provider store={store}>
-      <AppRouter />
+
+        <AppRouter />
+
     </Provider>
 );
 

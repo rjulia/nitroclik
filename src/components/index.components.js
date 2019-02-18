@@ -7,6 +7,8 @@ export { default as Test } from './Icons/Test';
 export { default as Input } from './Forms/Input/Input'; 
 export { default as ContactForm } from './Forms/ContactForm/ContactForm'; 
 export { default as HeaderSection } from './HeaderSection/HeaderSection'; 
+export { default as Card } from './Card/Card'; 
+
 
 
 
