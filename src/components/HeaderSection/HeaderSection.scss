@@ -1,0 +1,45 @@
+@import '../../Scss/variables.scss';
+
+.header-section__container {
+  height: 100vh;
+  overflow-y: hidden;
+  width: 100%;
+  .header-section__title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $white;
+    h1 {
+      background-color: rgba($white, 0.9);
+      padding: 8px 15px;
+      font-family: $outstanding;
+      font-weight: 300;
+      margin-top: 20px;
+      text-transform: uppercase;
+      color:$mainColor
+    }
+  }
+}
+
+
+@media (min-width: 576px) {
+  .header-section__container {
+    height: 500px;
+    .header-section__title {
+      height: auto;
+    }
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .header-section__container {
+    height: 700px;
+    .header-section__title {
+      height: 700px;
+    }
+  } 
+}

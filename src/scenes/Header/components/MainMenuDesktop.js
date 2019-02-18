@@ -8,10 +8,10 @@ const MainMenuDesktop = () => {
     <div className="header__menu--desktop">
         <ul className="menu__list">
           <li className="menu__list--item"><Link to="/"> Home</Link></li>
-          <li className="menu__list--item"><Link to="/"> About Us</Link></li>
-          <li className="menu__list--item"><Link to="/"> Services</Link></li>
-          <li className="menu__list--item"><Link to="/"> Blog</Link></li>
-          <li className="menu__list--item"><Link to="/"> Contact Us</Link></li>
+          <li className="menu__list--item"><Link to="/aboutus"> About Us</Link></li>
+          <li className="menu__list--item"><Link to="/services"> Services</Link></li>
+          <li className="menu__list--item"><Link to="/blog"> Blog</Link></li>
+          <li className="menu__list--item"><Link to="/contactus"> Contact Us</Link></li>
         </ul>
     </div>
   );

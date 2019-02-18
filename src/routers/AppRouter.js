@@ -9,12 +9,12 @@ const AppRouter = () => (
         <Header/>
         <Switch>
             <Route exact path="/" component={Home} />
-            {/* <Route path="/aboutus" component={AboutUs} /> */}
-            {/* <Route path="/services" component={Services} />
-            <Route path="/Blog" component={Blog} />
-            <Route path="/Blog/:Id" component={BlogDetail} />
+            <Route path="/aboutus" component={AboutUs} />
+            <Route path="/services" component={Services} />
+            <Route path="/blog" component={Blog} />
+            <Route path="/blog/:Id" component={BlogDetail} />
             <Route path="/contactus" component={ContactUS} />                
-            <Route component={NotFound} /> */}
+            <Route component={NotFound} />
         </Switch>
         <Footer/>
     </div>

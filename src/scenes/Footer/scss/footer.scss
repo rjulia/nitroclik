@@ -1,6 +1,21 @@
 @import "../../../scss/variables.scss";
 
 .footer {
-  height: 300px;
-  background-color: $secondaryColor;
+  height: 350px;
+  background-color: $text;
+  p, span {
+    margin: 0;
+    color: $white;
+  }
+
+  h5 {
+    font-family: $outstanding;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $mainColor;
+    border-bottom: 1px solid $mainColor;
+    width: auto;
+    padding-bottom: 5px;
+  }
+
 }
