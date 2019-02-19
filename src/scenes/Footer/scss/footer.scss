@@ -17,5 +17,8 @@
     width: auto;
     padding-bottom: 5px;
   }
+  @media (min-width: 576px) {
+    height: 100vh;
+  }
 
 }

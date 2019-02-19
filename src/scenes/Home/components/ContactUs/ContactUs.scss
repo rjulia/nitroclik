@@ -2,13 +2,14 @@
 
 .contact-us{
     height: 100vh;
-    //padding-top: $heightHeaderMobile + px;
+    padding-top: $heightHeaderMobile + px;
     @media (min-width: 576px) {
-      //padding-top: $heightHeaderDesktop + 20 + px;
+      padding-top: $heightHeaderDesktop + 20 + px;
     }
     .contact-us__img--img{
       width: 100%;
       height: auto;
+      display: none;
     }
     .contact-us__txt {
       padding: 20px 10px;
@@ -26,6 +27,10 @@
       border: none;
     }
     @media (min-width: 576px) {
+      .contact-us__img--img{
+        display: block;
+        height: auto;
+      }
       .contact-us__txt {
         padding: 40px;
     
