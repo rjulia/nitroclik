@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HeaderSection } from "../../Components/index.components";
+import { HeaderSection, AppIcon, ServerIcon, SoftwareIcon, CloudIcon } from "../../Components/index.components";
 
 const images = {
   small: './assets/images/servicesheader_340.jpg',
@@ -19,6 +19,32 @@ class Services extends Component {
         title={title}
         subtitle = {subtitle}
         />
+        <div className="container services__container row">
+            <div className="col-6">
+                <div className="services__iconbox">
+                  <AppIcon className={"services__iconbox--icon"}/>
+                  <span className="services__iconbox--text">WEB & APP </span>
+                </div> 
+            </div>
+            <div className="col-6">
+                <div className="services__iconbox">
+                  <ServerIcon className={"services__iconbox--icon"}/>
+                  <span className="services__iconbox--text">CLOUD COMPUTING</span>
+                </div> 
+            </div>
+            <div className="col-6">
+                <div className="services__iconbox">
+                  <CloudIcon className={"services__iconbox--icon"}/>
+                  <span className="services__iconbox--text">SISTEMS</span>
+                </div> 
+            </div>
+            <div className="col-6">
+                <div className="services__iconbox">
+                <SoftwareIcon className={"services__iconbox--icon"}/>
+                  <span className="services__iconbox--text">SOFTWARE</span>
+                </div> 
+            </div>
+        </div>
       </div>
     );
   }

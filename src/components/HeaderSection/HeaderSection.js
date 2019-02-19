@@ -5,8 +5,8 @@ import "./HeaderSection.scss";
 
 
 const ResponsiveImageW100 = styled(ResponsiveImage)`
-    width: 100vw;
-    height: auto;
+
+    height: 100vh;
     width: 100%;
     position: absolute;
     z-index: -10;
@@ -14,6 +14,8 @@ const ResponsiveImageW100 = styled(ResponsiveImage)`
     left: 0;
     @media (min-width: 576px) {
       width: 100%;
+      height: auto;
+
     }
 `;
 

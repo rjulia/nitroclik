@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Input } from "../../index.components";
 import axios from 'axios';
+import styled from 'styled-components';
 
 const initialState = {
   name : '',
@@ -11,6 +12,12 @@ const initialState = {
   mailSent: ''
 }
 const API_PATH = './api/index.php';
+
+const Button = styled.button`
+  background-color: #FFA59E;
+  border-radius: none;
+  border: none;
+`
 
 class ContactForm extends Component {
   state = {
@@ -94,7 +101,7 @@ class ContactForm extends Component {
             placeholder={"Message"}
             onChange={this.handleInputChange}
           />{" "}
-        <button type="submit" onClick={e => this.sendEmail(e)} value="Submit" className="btn">Submit</button>
+        <Button type="submit" onClick={e => this.sendEmail(e)} value="Submit" className="btn">Submit</Button>
         <div>
           {this.state.mailSent &&
             <div>Thank you for contcting us.</div>
