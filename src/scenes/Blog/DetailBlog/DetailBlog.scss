@@ -13,7 +13,7 @@
     margin: 4rem 0;
   }
   .detail-blog__sortdef{
-    max-width: 50%;
+    max-width: 100%;
     margin: 5px auto 30px;
     font-family: $text;
     font-size: 1.3rem;
@@ -21,14 +21,14 @@
   }
 
   .detail-blog__text{
-    max-width: 50%;
+    max-width: 100%;
     margin: 30px auto 30px;
     font-family: $text;
     font-size: 1.1rem;
     font-style: normal;
   }
   .detail-blog__img {
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
     height: 300px;
     overflow: hidden;
@@ -40,5 +40,18 @@
   }
   @media (min-width: 576px) {
     margin-top: $heightHeaderDesktop + px;
+
+    .detail-blog__sortdef{
+      max-width: 50%;
+
+    }
+  
+    .detail-blog__text{
+      max-width: 50%;
+    }
+    .detail-blog__img {
+      max-width: 50%;
+      
+    }
   }
 }

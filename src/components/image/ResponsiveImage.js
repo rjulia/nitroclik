@@ -15,7 +15,7 @@ export default  function ResponsiveImage(props) {
     updateWidth()
     // nos suscribimos al evento resize de window
     window.addEventListener("resize", updateWidth)
-  })
+  }, [])
   switch (true) {
     case (width > 1280):
       sizeImge = xlarge

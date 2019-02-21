@@ -4,7 +4,7 @@
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 100%;
+  width: 100vw;
   z-index: $Zmenu;
   background-color: transparent;
   height: $heightHeaderMobile + px;
@@ -14,6 +14,7 @@
   }
   @media (min-width: 576px) {
     height: $heightHeaderDesktop + px;
+    width: 100%;
   }
 
   .header { 
@@ -71,7 +72,7 @@
 }
 
 .logo {
-    width: 50%;
+    width: 65%;
     top: 10px;
     position: absolute;
     left: 10px;
@@ -124,7 +125,7 @@
   position: fixed;
   left: 0;
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   top: -100vh;
   z-index: $Zmenu-mobile;

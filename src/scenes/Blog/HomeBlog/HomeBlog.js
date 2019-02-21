@@ -37,13 +37,13 @@ class HomeBlog extends Component {
   }
   render() {
     return (
-      <div className="sections container d-flex flex-column my-5">
+      <div className="sections row">
         <HeaderSection 
         images={images}
         title={title}
         subtitle = {subtitle}
         />
-        <div className="row">
+        <div className="row container my-5 ">
           {this.state.articles.map((article, idx) =>(
             <div key={idx} className="col-md-4 col-12" >
               <Card {...article}/>

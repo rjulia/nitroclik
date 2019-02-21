@@ -13,32 +13,32 @@ const subtitle = "we give you the simple solutions for your new project";
 class Services extends Component {
   render() {
     return (
-      <div className="sections d-flex">
+      <div className="sections row">
         <HeaderSection 
         images={images}
         title={title}
         subtitle = {subtitle}
         />
         <div className="container services__container row">
-            <div className="col-6">
+            <div className="col-12 col-md-6">
                 <div className="services__iconbox">
                   <AppIcon className={"services__iconbox--icon"}/>
                   <span className="services__iconbox--text">WEB & APP </span>
                 </div> 
             </div>
-            <div className="col-6">
+            <div className="col-12 col-md-6">
                 <div className="services__iconbox">
                   <ServerIcon className={"services__iconbox--icon"}/>
                   <span className="services__iconbox--text">CLOUD COMPUTING</span>
                 </div> 
             </div>
-            <div className="col-6">
+            <div className="col-12 col-md-6">
                 <div className="services__iconbox">
                   <CloudIcon className={"services__iconbox--icon"}/>
                   <span className="services__iconbox--text">SISTEMS</span>
                 </div> 
             </div>
-            <div className="col-6">
+            <div className="col-12 col-md-6">
                 <div className="services__iconbox">
                 <SoftwareIcon className={"services__iconbox--icon"}/>
                   <span className="services__iconbox--text">SOFTWARE</span>

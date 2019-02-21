@@ -13,7 +13,7 @@ const subtitle = "Let's start today to build tomorrow";
 class AboutUs extends Component {
   render() {
     return (
-      <div className="sections d-flex">
+      <div className="sections row">
         <HeaderSection 
         images={images}
         title={title}

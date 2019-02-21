@@ -13,7 +13,7 @@ const subtitle = "how may i help you today?";
 class ContacUs extends Component {
   render() {
     return (
-      <div className="sections d-flex">
+      <div className="sections row">
         <HeaderSection 
         images={images}
         title={title}
