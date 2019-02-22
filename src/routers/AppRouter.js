@@ -10,12 +10,11 @@ ReactGA.pageview('/');
 const history = createBrowserHistory({
   basename: '/'
 });
-history.listen(location => {
-  // history.push('/super/url');
-  console.log(location)
-  ReactGA.pageview(location.pathname)
 
+history.listen(location => {
+  ReactGA.pageview(location.pathname)
 });
+
 const AppRouter = () => (
   <Router history={history}>
     <div className='container-fluid'>

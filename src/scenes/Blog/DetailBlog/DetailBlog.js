@@ -24,10 +24,14 @@ class DetailBlog extends Component {
   }
 
   render() {
-    const {article} = this.state
+    const { article } = this.state;
+    if(article.date) {
+      var dateBlog = new Date(article.date.seconds * 1000).toDateString();
+    }
     return (
       <div className="detail-blog container d-flex justify-content-center flex-column">
         <h1 className="detail-blog__title">{article.title}</h1>
+        <p className="detail-blog__category"><span className="text-uppercase font-weight-bold pr-2">{article.category}</span> | <span className="pl-2">{dateBlog}</span></p>
         <p className='detail-blog__sortdef'>{article.sortdef}</p>
         <div className='detail-blog__img'>
           <img src={article.image} alt={article.title} />

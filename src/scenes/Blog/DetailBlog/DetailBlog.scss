@@ -11,6 +11,15 @@
     font-family: $outstanding;
     font-weight: 300;
     margin: 4rem 0;
+    
+  }
+  .detail-blog__category{
+    span {
+      color: $text;
+      &.text-uppercase {
+        color: $mainColor;
+      }
+    }
   }
   .detail-blog__sortdef{
     max-width: 100%;

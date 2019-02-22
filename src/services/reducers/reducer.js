@@ -1,5 +1,9 @@
+import data from "../../data/data";
+
+
 const filtersReducerDefaultState = {
-    isOpen: false
+    isOpen: false,
+    data: []
 };
 
 export default (state = filtersReducerDefaultState, action) => {
@@ -8,6 +12,11 @@ export default (state = filtersReducerDefaultState, action) => {
             return {
                 ...state,
                 isOpen: action.isOpen
+            };
+        case 'GETDATA':
+            return {
+                ...state,
+                data: data
             };
         default:
             return state;

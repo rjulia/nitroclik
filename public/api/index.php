@@ -13,8 +13,8 @@ if ($_POST) {
     $subject = $_POST['subject'];
     $to = "info@nitroclik.com";
     $from = "info@nitroclik.com";
-
     // data
+    $services = $_POST['favourites'];
 
     // $msg = $_POST['email'] . $_POST['name'] . $_POST['phone'] . $_POST['message'];
 
@@ -24,6 +24,7 @@ if ($_POST) {
     $msg .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['email'] ) . "</td></tr>";
     $msg .= "<tr><td><strong>Phone:</strong> </td><td>" . strip_tags($_POST['phone']) . "</td></tr>";
     $msg .= "<tr><td><strong>Message:</strong> </td><td>" . htmlentities($_POST['message']) . "</td></tr>";
+    $msg .= "<tr><td><strong>Services:</strong> </td><td>" . htmlentities(implode("| ",$services)) . "</td></tr>";
     $msg .= "</table>";
     $msg .= "</body></html>";
 
