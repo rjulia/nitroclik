@@ -3,7 +3,11 @@ import './HowWeDo.scss';
 import { ResponsiveImage, HeadTitle } from "../../../../Components/index.components";
 import styled from 'styled-components';
 import SquareHow from "./SquareHow";
-import { Launch, Idea, Test} from "../../../../Components/index.components";
+import { Launch, Idea, Test } from "../../../../Components/index.components";
+import _ from "lodash";
+import localization from "../../../../localization";
+
+
 
 
 const images = {
@@ -31,41 +35,41 @@ const ResponsiveImageW100 = styled(ResponsiveImage)`
 const HowWeDo = () => {
   return (
     <div className="how-we-do justify-content-center d-flex">
-        <ResponsiveImageW100 images={images}/>
-        <div className="container how-we-do__container">
-          <div className="row">
-            <div className="col-12 d-flex justify-content-center mb-3 mb-md-5">
-              <HeadTitle title={'How we do'} color={'#FFA59E'} lineColor={'#FFA59E'}/>
+      <ResponsiveImageW100 images={images} />
+      <div className="container how-we-do__container">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center mb-3 mb-md-5">
+            <HeadTitle title={localization.home.howwedo} color={'#FFA59E'} lineColor={'#FFA59E'} />
 
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-md-4">
+            <SquareHow
+              icon={<Idea className={'icon'} />}
+              text={_.toUpper(localization.home.planning)} />
+            <div className="how-we-do__commet">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
             </div>
           </div>
-          <div className="row">
-            <div className="col-12 col-md-4">
-                <SquareHow 
-                  icon={<Idea className={'icon'}/>} 
-                  text={'PLANNING AND DESIGNING'}/>
-                <div className="how-we-do__commet">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
-                </div>
+          <div className="col-12 col-md-4">
+            <SquareHow
+              icon={<Launch className={'icon'} />}
+              text={_.toUpper(localization.home.building)} />
+            <div className="how-we-do__commet">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
             </div>
-            <div className="col-12 col-md-4">
-                <SquareHow 
-                  icon={<Launch className={'icon'}/>}
-                  text={'BUILDING AND DEVELOPING'}/>
-                <div className="how-we-do__commet">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
-                </div>
-            </div>
-            <div className="col-12 col-md-4">
-                <SquareHow 
-                  icon={<Test className={'icon'}/>}
-                  text={'TESTING AND DELIVERY'}/>
-                <div className="how-we-do__commet">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
-                </div>
+          </div>
+          <div className="col-12 col-md-4">
+            <SquareHow
+              icon={<Test className={'icon'} />}
+              text={_.toUpper(localization.home.testing)} />
+            <div className="how-we-do__commet">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
             </div>
           </div>
         </div>
+      </div>
     </div>
   );
 };

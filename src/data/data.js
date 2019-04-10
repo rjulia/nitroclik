@@ -21,47 +21,57 @@ export default [
   },
   {
     id: 4,
+    value: 'web-project',
+    name: 'Web project'
+  },
+  {
+    id: 5,
     value: 'end-to-end-project',
     name: 'End to End Project'
   },
   {
-    id: 5,
+    id: 6,
     value: 'seo',
     name: 'Seo'
   },
   {
-    id: 6,
+    id: 7,
     value: 'mobil-app',
     name: 'App mobile'
   },
   {
-    id: 7,
+    id: 8,
+    value: 'stra-up',
+    name: 'E-commerce'
+  },
+  {
+    id: 9,
     value: 'e-commerce',
     name: 'E-commerce'
   },
- 
+
   {
-    id: 8,
+    id: 10,
     value: 'custom-software',
     name: 'Custom software'
   },
   {
-    id: 9,
+    id: 11,
     value: 'cloud-computing',
     name: 'Cloud Computing'
   },
   {
-    id: 10,
+    id: 12,
     value: 'security',
     name: 'Security'
   },
   {
-    id: 11,
-    value: 'cloud-secure',
-    name: 'Cloud Secure'
+    id: 13,
+    value: 'cloud-service',
+    name: 'Cloud Service'
   },
   {
-    id: 12,
+    id: 14,
     value: 'hosting',
     name: 'Hosting'
   }
