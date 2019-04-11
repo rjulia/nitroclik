@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import {
   Carousel,
@@ -6,8 +6,11 @@ import {
   CarouselControl,
   CarouselIndicators
 } from 'reactstrap';
-import { ResponsiveImage,  } from "../index.components";
+import { ResponsiveImage, ButtonDown } from "../index.components";
 import BoxTitle from "../HeadTitle/BoxTitle";
+import _ from "lodash";
+import localization from "../../localization";
+
 const imagesHomeOne = {
   small: './assets/images/home_one_340.jpg',
   medium: './assets/images/home_one_768.jpg',
@@ -32,21 +35,21 @@ const imagesHomeThree = {
 const items = [
   {
     images: imagesHomeOne,
-    altText: 'Innovate',
-    caption: 'Innovate',
-    subtitle: 'we never stop to learn to offer the best for your project'
+    altText: localization.carousel.one.altText,
+    caption: localization.carousel.one.caption,
+    subtitle: localization.carousel.one.subtitle
   },
   {
     images: imagesHomeThree,
-    altText: 'Create',
-    caption: 'Create',
-    subtitle: 'we believe together can create what we want'
+    altText: localization.carousel.two.altText,
+    caption: localization.carousel.two.caption,
+    subtitle: localization.carousel.two.subtitle
   },
   {
     images: imagesHomeTwo,
-    altText: 'Build',
-    caption: 'Build',
-    subtitle: 'we provide for you the best technology in the market'
+    altText: localization.carousel.three.altText,
+    caption: localization.carousel.three.caption,
+    subtitle: localization.carousel.three.subtitle
   }
 ];
 const HeadTitleCarousel = styled(BoxTitle)`
@@ -65,10 +68,17 @@ const ResponsiveImageW100 = styled(ResponsiveImage)`
       width: 100%;
     }
 `;
+const scrollToDown = () => {
+
+  const h = document.getElementsByClassName('carousel')
+  window.scrollTo({ top: h[0].offsetHeight, left: 0, behavior: 'smooth' });
+
+}
+
 class CarouselGroup extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeIndex: 0, playing: true  };
+    this.state = { activeIndex: 0, playing: true };
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
     this.goToIndex = this.goToIndex.bind(this);
@@ -101,6 +111,7 @@ class CarouselGroup extends Component {
     this.setState({ activeIndex: newIndex });
   }
 
+
   render() {
     const { activeIndex } = this.state;
     const slides = items.map((item, idx) => {
@@ -110,30 +121,35 @@ class CarouselGroup extends Component {
           onExited={this.onExited}
           key={idx + 13}
         >
-          <HeadTitleCarousel title={item.caption} subtitle={item.subtitle}/>
-          <ResponsiveImageW100 images={item.images}/>
-          {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
+
+          <HeadTitleCarousel title={item.caption} subtitle={item.subtitle} />
+          <ResponsiveImageW100 images={item.images} />
         </CarouselItem>
       );
     });
 
     return (
-      <Carousel
-        activeIndex={activeIndex}
-        next={this.next}
-        previous={this.previous}
-        keyboard={false}
-        
-        ride="carousel"
-        interval={this.state.playing ? 7000 : false}
-        slide={true}
-      >
-        
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-      </Carousel>
+      <Fragment>
+        <Carousel
+          className="carousel"
+          id="carousel"
+          activeIndex={activeIndex}
+          next={this.next}
+          previous={this.previous}
+          keyboard={false}
+          ride="carousel"
+          interval={this.state.playing ? 7000 : false}
+          slide={true}
+        >
+
+          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+          {slides}
+          <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+          <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+
+        </Carousel>
+        <ButtonDown handleClick={scrollToDown} />
+      </Fragment>
     );
   }
 }

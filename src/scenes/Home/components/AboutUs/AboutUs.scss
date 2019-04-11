@@ -1,48 +1,54 @@
 @import '../../../../scss/variables.scss';
 
-.about-us{
+.what-we-do {
   height: 100vh;
   padding-top: $heightHeaderMobile + px;
+
   @media (min-width: 576px) {
     padding-top: $heightHeaderDesktop + 20 + px;
   }
-  .about-us__img{
-    width: 100%;
-    margin: 0 auto;
-    height: 100px;
+
+  &__frame {
+    display: flex;
+
+  }
+
+  &__content {
+    padding: 20px 5px;
     text-align: center;
-    overflow-y: hidden;
-  }
-  .about-us__img--img{
-    width: 100%;
-    height: auto;
-  }
-  .about-us__txt {
-    text-align: center;
-    padding: 20px 10px;
+    color: $white;
 
-    .about-us__txt--parf{
-      color: $text;
-      font-family: $general;
-      font-size: 1rem;
+    ul {
+      list-style: none;
+      padding: 0;
 
-    }
-  }
-  @media (min-width: 576px) {
-    .about-us__img{
-      height: auto;
-
-    }
-    .about-us__img--img{
-      width: 120%;
-    }
-    .about-us__txt {
-      padding: 20px;
-  
-      .about-us__txt--parf{
-        font-size: 1.3rem; 
-
+      >li {
+        font-size: 20px;
+        line-height: 40px;
       }
-    }  
+    }
+
+    h4 {
+      text-transform: uppercase;
+    }
+
+    &.one {
+      background-color: $romantic;
+    }
+
+    &.two {
+      background-color: $tonys_pink;
+    }
+
+    &.three {
+      background-color: $carissma;
+    }
+
+    &.four {
+      background-color: $lavender_rose;
+    }
+
   }
+
+
 }

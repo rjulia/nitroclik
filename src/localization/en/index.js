@@ -6,13 +6,26 @@ export default {
     blog: 'blog',
     contact: 'contact us'
   },
+  carousel: {
+    one: {
+      altText: 'Innovate',
+      caption: 'Innovate',
+      subtitle: 'we never stop to learn to offer the best for your project'
+    },
+    two: {
+      altText: 'Create',
+      caption: 'Create',
+      subtitle: 'we believe together can create what we want'
+    },
+    three: {
+      altText: 'Build',
+      caption: 'Build',
+      subtitle: 'we provide for you the best technology in the market'
+    }
+  },
   home: {
-    about: 'we..',
-    about_tl1: '... are consulting',
-    about_tx1: ' We transform businesses and help our clients outpace digital disruption—by designing new business models and enhancing existing ones.',
-    about_tl2: '.. work end-to-end',
-    about_tx2_a: 'We help clients develop more successful products and propositions',
-    about_tx2_b: 'Using an end-to-end process we call Meaningful Design that brings together the best of Design Thinking, Lean Startup and Agile.',
+    whatwe_title: 'what we do',
+
     howwedo: 'how we do',
     planning: 'planning and designing',
     building: 'building and developing',
@@ -38,7 +51,13 @@ export default {
   aboutUs: {
     title: 'About us',
     subtitle: "Let's start today to build tomorrow",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel nunc nec leo tempor consequat. Nunc ac dapibus mauris. Curabitur a velit at eros iaculis gravida. Integer id porta mauris. Nullam pharetra tortor quis orci ornare mollis. Suspendisse potenti. Sed ut dictum risus, id sodales purus."
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel nunc nec leo tempor consequat. Nunc ac dapibus mauris. Curabitur a velit at eros iaculis gravida. Integer id porta mauris. Nullam pharetra tortor quis orci ornare mollis. Suspendisse potenti. Sed ut dictum risus, id sodales purus.",
+    about: 'we..',
+    about_tl1: '... are consulting',
+    about_tx1: ' We transform businesses and help our clients outpace digital disruption—by designing new business models and enhancing existing ones.',
+    about_tl2: '.. work end-to-end',
+    about_tx2_a: 'We help clients develop more successful products and propositions',
+    about_tx2_b: 'Using an end-to-end process we call Meaningful Design that brings together the best of Design Thinking, Lean Startup and Agile.',
   },
   contact: {
     title: 'Contact us',

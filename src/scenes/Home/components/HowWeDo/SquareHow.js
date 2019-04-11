@@ -5,11 +5,11 @@ class SquareHow extends Component {
     return (
       <div className="square-how">
         <div className="square-how__block">
-          <div className="square-how__frame">          
-                {this.props.icon} 
-              <p className="square-how__text">
-                {this.props.text}
-              </p>
+          <div className="square-how__frame">
+            {this.props.icon}
+            <p className="square-how__text">
+              {this.props.text}
+            </p>
           </div>
         </div>
       </div>

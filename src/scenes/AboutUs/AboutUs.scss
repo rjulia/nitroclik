@@ -1,0 +1,55 @@
+@import '../../../../scss/variables.scss';
+
+.about-us {
+  height: 100vh;
+  padding-top: $heightHeaderMobile + px;
+
+  @media (min-width: 576px) {
+    padding-top: $heightHeaderDesktop + 20 + px;
+  }
+
+  .about-us__img {
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    text-align: center;
+    overflow-y: hidden;
+  }
+
+  .about-us__img--img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-us__txt {
+    text-align: center;
+    padding: 20px 10px;
+
+    .about-us__txt--parf {
+      color: $text;
+      font-family: $general;
+      font-size: 1rem;
+
+    }
+  }
+
+  @media (min-width: 576px) {
+    .about-us__img {
+      height: auto;
+
+    }
+
+    .about-us__img--img {
+      width: 120%;
+    }
+
+    .about-us__txt {
+      padding: 20px;
+
+      .about-us__txt--parf {
+        font-size: 1.3rem;
+
+      }
+    }
+  }
+}
