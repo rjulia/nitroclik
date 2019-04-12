@@ -3,7 +3,7 @@ import { CarouselGroup } from "../../../Components/index.components.js";
 
 const HeroImage = () => {
   return (
-    <CarouselGroup/>
+    <CarouselGroup />
   );
 };
 

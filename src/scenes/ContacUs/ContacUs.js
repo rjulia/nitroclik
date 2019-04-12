@@ -14,8 +14,6 @@ const images = {
   large: './assets/images/contactusheader.jpg',
   xlarge: './assets/images/contactusheader.jpg'
 }
-const title = "Contact us";
-const subtitle = "how may i help you today?";
 
 class ContacUs extends Component {
   constructor(props) {

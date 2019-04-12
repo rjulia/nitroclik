@@ -12,10 +12,10 @@ class Footer extends Component {
             <p>+852 5348 4245</p>
             <span>copyright ® 2019 NITROCLIK</span>
           </div>
-          <div className="col-12 col-md-8 pt-5 d-none d-sm-inline-flex"> 
+          {/* <div className="col-12 col-md-8 pt-5 d-none d-sm-inline-flex"> 
             <h5>Last post</h5>
           
-          </div>
+          </div> */}
         </div>
       </div>
     );

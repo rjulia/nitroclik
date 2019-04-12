@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { HeroImage, AboutUs, HowWeDo, ContactUs } from './components/index';
-
+import { HeroImage, WhatWeDo, HowWeDo, ContactUs } from './components/index';
+import InViewMonitor from '../../Components/InViewMonitor/InViewMonitor'
 
 // imagesHome
 
@@ -8,14 +8,19 @@ class Home extends Component {
   render() {
     return (
       <div className="d-flex row flex-column">
-          <HeroImage/>
+        <HeroImage />
         <div className="container">
-          <AboutUs/>
+          <InViewMonitor
+            classNameNotInView='vis-hidden'
+            classNameInView='animated fadeInUp'>
+            <WhatWeDo />
+
+          </InViewMonitor>
         </div>
-          <HowWeDo/>
+        <HowWeDo />
         <div className="container">
-          <ContactUs/>
-        </div>   
+          <ContactUs />
+        </div>
       </div>
     );
   }

@@ -1,11 +1,14 @@
 @import '../../../../scss/variables.scss';
 
 .what-we-do {
-  height: 100vh;
+  height: 100vh * 2.2;
+  margin-bottom: 50px;
   padding-top: $heightHeaderMobile + px;
 
   @media (min-width: 576px) {
+    height: 100vh;
     padding-top: $heightHeaderDesktop + 20 + px;
+    margin-bottom: 0;
   }
 
   &__frame {
@@ -14,6 +17,8 @@
   }
 
   &__content {
+    margin-bottom: 20px;
+    width: 100%;
     padding: 20px 5px;
     text-align: center;
     color: $white;
@@ -48,6 +53,20 @@
       background-color: $lavender_rose;
     }
 
+  }
+
+  .item {
+    margin-top: 140px;
+
+    .mouse {
+      border: 3px solid $text;
+
+      &:before {
+
+        background: $text;
+
+      }
+    }
   }
 
 

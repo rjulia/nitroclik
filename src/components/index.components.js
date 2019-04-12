@@ -14,6 +14,8 @@ export { default as ContactForm } from './Forms/ContactForm/ContactForm';
 export { default as HeaderSection } from './HeaderSection/HeaderSection';
 export { default as Card } from './Card/Card';
 export { default as ButtonDown } from './buttons/ButtonDown';
+export { default as InviewMonitor } from './InViewMonitor/InViewMonitor';
+
 
 
 

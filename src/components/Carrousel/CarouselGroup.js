@@ -8,7 +8,7 @@ import {
 } from 'reactstrap';
 import { ResponsiveImage, ButtonDown } from "../index.components";
 import BoxTitle from "../HeadTitle/BoxTitle";
-import _ from "lodash";
+
 import localization from "../../localization";
 
 const imagesHomeOne = {
@@ -75,6 +75,7 @@ const scrollToDown = () => {
 
 }
 
+
 class CarouselGroup extends Component {
   constructor(props) {
     super(props);
@@ -84,6 +85,7 @@ class CarouselGroup extends Component {
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
+
   }
 
   onExiting() {

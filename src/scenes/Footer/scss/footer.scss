@@ -3,7 +3,9 @@
 .footer {
   height: 350px;
   background-color: $text;
-  p, span {
+
+  p,
+  span {
     margin: 0;
     color: $white;
   }
@@ -17,8 +19,9 @@
     width: auto;
     padding-bottom: 5px;
   }
+
   @media (min-width: 576px) {
-    height: 100vh;
+    height: 250px;
   }
 
 }

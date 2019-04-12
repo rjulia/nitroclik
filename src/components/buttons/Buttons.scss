@@ -1,36 +1,43 @@
 .item {
   position: relative;
+  display: none;
   top: -100px;
-}
 
-.mouse {
-  width: 40px;
-  height: 60px;
-  border-radius: 20px;
-  border: 3px solid #fff;
-  position: absolute;
-  top: calc(50% - 30px);
-  left: calc(50% - 20px);
-  cursor: pointer;
-
-  &:before,
-  &:after {
-    content: "";
-    display: block;
+  .mouse {
+    width: 40px;
+    height: 60px;
+    border-radius: 20px;
+    border: 3px solid #fff;
     position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 20px);
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    &:before {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: 10px;
+      left: calc(50% - 5px);
+      background: #fff;
+      -webkit-animation: m-1-ball 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      animation: m-1-ball 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
   }
 
-  &:before {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    top: 10px;
-    left: calc(50% - 5px);
-    background: #fff;
-    -webkit-animation: m-1-ball 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-    animation: m-1-ball 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  @media (min-width: 576px) {
+    display: block;
   }
 }
+
+
 
 
 @-webkit-keyframes m-1-ball {

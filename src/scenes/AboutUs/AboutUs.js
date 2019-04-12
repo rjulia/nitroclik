@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { HeaderSection, HeadTitle } from "../../Components/index.components";
 import localization from "../../localization";
-
+import "./AboutUs.scss"
 import _ from "lodash";
-
 const images = {
   small: './assets/images/aboutusheader_340.jpg',
   medium: './assets/images/aboutusheader.jpg',

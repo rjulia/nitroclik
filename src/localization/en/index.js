@@ -62,6 +62,45 @@ export default {
   contact: {
     title: 'Contact us',
     subtitle: 'How may i help you today?'
+  },
+  services: {
+    title: 'Contact us',
+    subtitle: 'How may i help you today?',
+    grafhic: {
+      title: 'Branding & Graphic Design',
+      ser1: 'Brand Consulting',
+      ser2: 'Logo Design',
+      ser3: 'Branding Guiline',
+      ser4: 'Brouchures & Flyers',
+      ser5: 'Catalogue',
+      ser6: 'Packging',
+    },
+    web: {
+      title: 'Web & App development',
+      ser1: 'Resposive Website',
+      ser2: 'App IOS & Android',
+      ser3: 'Drupal or Custom CMS',
+      ser4: 'E-commerce',
+      ser5: 'Start-up ConsultingBrand Consulting',
+
+    },
+    marketing: {
+      title: 'Digital Marketing',
+      ser1: 'SEO & SEM',
+      ser2: 'Digital Growth',
+      ser3: 'Social Media Marketing',
+      ser4: 'mail Campaign',
+      ser5: 'Content Marketing',
+      ser6: 'Marketing Automation',
+    },
+    cloud: {
+      title: 'Cloud & SaaS & More',
+      ser1: 'Amazon Web Services',
+      ser2: 'Integrations',
+      ser3: 'Document Managmen',
+      ser4: 'Business Analisys',
+      ser5: 'Finance Solutions',
+    }
   }
 
 }
