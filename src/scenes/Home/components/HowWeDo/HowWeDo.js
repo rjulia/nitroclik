@@ -1,6 +1,7 @@
 import React from 'react';
 import './HowWeDo.scss';
-import { ResponsiveImage, HeadTitle } from "../../../../Components/index.components";
+import InViewMonitor from '../../../../Components/InViewMonitor/InViewMonitor';
+import { ResponsiveImage, HeadTitle, ButtonDown } from "../../../../Components/index.components";
 import styled from 'styled-components';
 import SquareHow from "./SquareHow";
 import { Launch, Idea, Test } from "../../../../Components/index.components";
@@ -30,10 +31,17 @@ const ResponsiveImageW100 = styled(ResponsiveImage)`
       width: 100%;
     }
 `;
+const scrollToDown = () => {
+  const how_height = document.getElementsByClassName('how-we-do')
+  console.log(how_height[0].offsetHeight)
+  window.scrollTo({ top: how_height[0].offsetHeight * 3, left: 0, behavior: 'smooth' });
+
+}
 
 
 const HowWeDo = () => {
   return (
+
     <div className="how-we-do justify-content-center d-flex">
       <ResponsiveImageW100 images={images} />
       <div className="container how-we-do__container">
@@ -45,31 +53,49 @@ const HowWeDo = () => {
         </div>
         <div className="row">
           <div className="col-12 col-md-4">
-            <SquareHow
-              icon={<Idea className={'icon'} />}
-              text={_.toUpper(localization.home.planning)} />
-            <div className="how-we-do__commet">
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
-            </div>
+            <InViewMonitor
+              classNameNotInView='vis-hidden'
+              classNameInView='animated fadeInLeft' // fadeInLeft, or fadeInRight
+            >
+              <SquareHow
+                icon={<Idea className={'icon'} />}
+                text={_.toUpper(localization.home.planning)} />
+              <div className="how-we-do__commet">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
+              </div>
+            </InViewMonitor>
+          </div>
+
+          <div className="col-12 col-md-4">
+            <InViewMonitor
+              classNameNotInView='vis-hidden'
+              classNameInView='animated fadeInUp' // fadeInLeft, or fadeInRight
+            >
+              <SquareHow
+                icon={<Launch className={'icon'} />}
+                text={_.toUpper(localization.home.building)} />
+              <div className="how-we-do__commet">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
+              </div>
+
+            </InViewMonitor>
           </div>
           <div className="col-12 col-md-4">
-            <SquareHow
-              icon={<Launch className={'icon'} />}
-              text={_.toUpper(localization.home.building)} />
-            <div className="how-we-do__commet">
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
-            </div>
-          </div>
-          <div className="col-12 col-md-4">
-            <SquareHow
-              icon={<Test className={'icon'} />}
-              text={_.toUpper(localization.home.testing)} />
-            <div className="how-we-do__commet">
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
-            </div>
+            <InViewMonitor
+              classNameNotInView='vis-hidden'
+              classNameInView='animated fadeInRight' // fadeInLeft, or fadeInRight
+            >
+              <SquareHow
+                icon={<Test className={'icon'} />}
+                text={_.toUpper(localization.home.testing)} />
+              <div className="how-we-do__commet">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
+              </div>
+            </InViewMonitor>
           </div>
         </div>
       </div>
+      <ButtonDown handleClick={scrollToDown} />
     </div>
   );
 };
