@@ -10,12 +10,12 @@ export default {
     one: {
       altText: 'Innovate',
       caption: 'Innovate',
-      subtitle: 'we never stop to learn to offer the best for your project'
+      subtitle: 'Innovate to offer the best for your project'
     },
     two: {
       altText: 'Create',
       caption: 'Create',
-      subtitle: 'we believe together can create what we want'
+      subtitle: 'Together can create what we want'
     },
     three: {
       altText: 'Build',
@@ -52,22 +52,26 @@ export default {
     title: 'About us',
     subtitle: "Let's start today to build tomorrow",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel nunc nec leo tempor consequat. Nunc ac dapibus mauris. Curabitur a velit at eros iaculis gravida. Integer id porta mauris. Nullam pharetra tortor quis orci ornare mollis. Suspendisse potenti. Sed ut dictum risus, id sodales purus.",
-    about: 'we..',
-    about_tl1: '... are consulting',
+    about: 'what we are',
+    about_tl1: 'we are consulting',
     about_tx1: ' We transform businesses and help our clients outpace digital disruption—by designing new business models and enhancing existing ones.',
-    about_tl2: '.. work end-to-end',
+    about_tl2: 'we work end-to-end',
     about_tx2_a: 'We help clients develop more successful products and propositions',
     about_tx2_b: 'Using an end-to-end process we call Meaningful Design that brings together the best of Design Thinking, Lean Startup and Agile.',
+    who: 'who we are'
   },
   contact: {
     title: 'Contact us',
     subtitle: 'How may i help you today?'
   },
   services: {
-    title: 'Contact us',
-    subtitle: 'How may i help you today?',
+    title: 'Services',
+    subtitle: "Let's build together",
+    text: 'We offer and designed brands, designs, websites and services to create new and outstanding your brand and to your customers experiences. <br/> Our work is supported by key competencies that combine strategic consulting, creative and technology services enabling us to deliver experience-driven services. <br/> We focus on delivering on our mission to create and development  incredible experiences that bring people and brands together, createing an impact on society and transform day to day with you.',
+
     grafhic: {
       title: 'Branding & Graphic Design',
+      text: 'If you come to us with a business concept we can help you take it from idea to reality. If you think your existing communications material, perhaps your logo design or web design, looks tired or out of date, then we can help to breathe life back into your company’s image. As a leading London web design company we will help you improve brand value and also as a result create a lasting impression with your clients.',
       ser1: 'Brand Consulting',
       ser2: 'Logo Design',
       ser3: 'Branding Guiline',
@@ -77,6 +81,7 @@ export default {
     },
     web: {
       title: 'Web & App development',
+      text: 'We have over 14 years experience in building web sites and business & consumer applications. We can design a simple WordPress portfolio website or a bespoke fully content managed eCommerce web site solution or even a bespoke web application. Our years of experience building and designing websites means we have a range of options at our fingertips and the right people on board to deliver.',
       ser1: 'Resposive Website',
       ser2: 'App IOS & Android',
       ser3: 'Drupal or Custom CMS',
@@ -86,6 +91,7 @@ export default {
     },
     marketing: {
       title: 'Digital Marketing',
+      text: 'We work with all our clients to ensure that once their web site has been launched it generates return on investment. As a leading London web design company once your web site has been launched we will remedy any faults found on the web site where it does not function in accordance with the specifications delivered at the start of the project. We can provide maintenance and hosting contracts. In the unlikely event that your web site develops an issue then we respond quickly.',
       ser1: 'SEO & SEM',
       ser2: 'Digital Growth',
       ser3: 'Social Media Marketing',
@@ -97,7 +103,7 @@ export default {
       title: 'Cloud & SaaS & More',
       ser1: 'Amazon Web Services',
       ser2: 'Integrations',
-      ser3: 'Document Managmen',
+      ser3: 'Document Management',
       ser4: 'Business Analisys',
       ser5: 'Finance Solutions',
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 //import '../scss/Header.scss';
 import localization from "../../../localization";
 import _ from "lodash";
@@ -8,11 +8,21 @@ const MainMenuDesktop = () => {
   return (
     <div className="header__menu--desktop">
       <ul className="menu__list">
-        <li className="menu__list--item"><Link to="/"> {_.toUpper(localization.menu.home)}</Link></li>
-        <li className="menu__list--item"><Link to="/aboutus">{_.toUpper(localization.menu.aboutus)} </Link></li>
-        <li className="menu__list--item"><Link to="/services">{_.toUpper(localization.menu.services)}</Link></li>
-        {/* <li className="menu__list--item"><Link to="/blog">{_.toUpper(localization.menu.blog)}</Link></li> */}
-        <li className="menu__list--item"><Link to="/contactus">{_.toUpper(localization.menu.contact)}</Link></li>
+        <NavLink activeClassName='is-active' to="/" className="menu__list--item">
+          {_.toUpper(localization.menu.home)}
+        </NavLink>
+        <NavLink activeClassName='is-active' className="menu__list--item" to="/aboutus">
+          {_.toUpper(localization.menu.aboutus)}
+        </NavLink>
+        <NavLink activeClassName='is-active' className="menu__list--item" to="/services">
+          {_.toUpper(localization.menu.services)}
+        </NavLink>
+        {/* <NavLink activeClassName='is-active' className="menu__list--item">
+        <p to="/blog">{_.toUpper(localization.menu.blog)}
+        </p></NavLink> */}
+        <NavLink activeClassName='is-active' className="menu__list--item" to="/contactus">
+          {_.toUpper(localization.menu.contact)}
+        </NavLink>
       </ul>
     </div>
   );

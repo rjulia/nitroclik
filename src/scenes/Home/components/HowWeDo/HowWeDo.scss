@@ -29,14 +29,17 @@
   }
 
   .fadeInLeft {
+    -webkit-animation-delay: 0s;
     animation-delay: 0s;
   }
 
   .fadeInUp {
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
   }
 
   .fadeInRight {
+    -webkit-animation-delay: 2s;
     animation-delay: 2s;
   }
 

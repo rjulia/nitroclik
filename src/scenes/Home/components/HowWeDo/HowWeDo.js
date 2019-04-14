@@ -7,7 +7,7 @@ import SquareHow from "./SquareHow";
 import { Launch, Idea, Test } from "../../../../Components/index.components";
 import _ from "lodash";
 import localization from "../../../../localization";
-
+import zenscroll from 'zenscroll'
 
 
 
@@ -33,9 +33,7 @@ const ResponsiveImageW100 = styled(ResponsiveImage)`
 `;
 const scrollToDown = () => {
   const how_height = document.getElementsByClassName('how-we-do')
-  console.log(how_height[0].offsetHeight)
-  window.scrollTo({ top: how_height[0].offsetHeight * 3, left: 0, behavior: 'smooth' });
-
+  zenscroll.toY(how_height[0].offsetHeight * 3, 500)
 }
 
 

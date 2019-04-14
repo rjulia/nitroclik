@@ -3,12 +3,12 @@ import './WhatWeDo.scss';
 import { HeadTitle, ButtonDown } from "../../../../Components/index.components";
 import localization from "../../../../localization";
 import _ from "lodash";
+import zenscroll from 'zenscroll'
+
 
 const scrollToDown = () => {
   const wha_height = document.getElementsByClassName('what-we-do')
-  console.log(wha_height[0].offsetHeight)
-  window.scrollTo({ top: wha_height[0].offsetHeight * 2, left: 0, behavior: 'smooth' });
-
+  zenscroll.toY(wha_height[0].offsetHeight * 2, 500)
 }
 
 class WhatWeDo extends Component {

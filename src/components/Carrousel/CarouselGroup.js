@@ -10,6 +10,7 @@ import { ResponsiveImage, ButtonDown } from "../index.components";
 import BoxTitle from "../HeadTitle/BoxTitle";
 
 import localization from "../../localization";
+import zenscroll from 'zenscroll'
 
 const imagesHomeOne = {
   small: './assets/images/home_one_340.jpg',
@@ -71,7 +72,7 @@ const ResponsiveImageW100 = styled(ResponsiveImage)`
 const scrollToDown = () => {
 
   const h = document.getElementsByClassName('carousel')
-  window.scrollTo({ top: h[0].offsetHeight, left: 0, behavior: 'smooth' });
+  zenscroll.toY(h[0].offsetHeight, 500)
 
 }
 
@@ -122,6 +123,7 @@ class CarouselGroup extends Component {
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={idx + 13}
+          className={'sas' + idx}
         >
 
           <HeadTitleCarousel title={item.caption} subtitle={item.subtitle} />

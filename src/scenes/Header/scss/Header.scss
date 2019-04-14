@@ -2,34 +2,41 @@
 
 .container__header {
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
   width: 100vw;
   z-index: $Zmenu;
   background-color: transparent;
   height: $heightHeaderMobile + px;
   transition: background-color 0.4s ease-out;
+
   &.dark {
     background-color: rgba($color: #000000, $alpha: 0.5)
   }
+
   @media (min-width: 576px) {
     height: $heightHeaderDesktop + px;
     width: 100%;
   }
 
-  .header { 
+  .header {
     top: 0;
     left: 0;
     position: relative;
     height: $heightHeaderMobile + px;
+
     p {
       font-family: 'Lato', sans-serif;
       color: $white;
-  
+
     }
+
     @media (min-width: 576px) {
       height: $heightHeaderDesktop + px;
     }
+
     &__menu--desktop {
       display: none;
       position: absolute;
@@ -42,28 +49,27 @@
         display: flex;
         height: $heightHeaderDesktop + px;
       }
+
       .menu__list {
         display: flex;
         justify-content: space-between;
         margin: 0;
+
         .menu__list--item {
           min-width: 100px;
           color: $white;
           text-align: center;
           display: inline-block;
           padding: 0 10px 3px;
+          font-size: 1.3rem;
+          font-family: 'Lato', sans-serif;
+          text-decoration: none;
 
-          a {
-            color: $white;
-            font-size: 1.2rem;
-            font-family: 'Lato', sans-serif;
-            text-decoration: none;
-          }
-          &:hover {
+          &:hover,
+          &.is-active {
             background: rgba($white, 0.7);
-            a {
-              color: $hoverManiColor;
-            }
+            color: $hoverManiColor;
+
           }
         }
       }
@@ -72,36 +78,42 @@
 }
 
 .logo {
-    width: 65%;
-    top: 10px;
-    position: absolute;
-    left: 10px;
+  width: 65%;
+  top: 10px;
+  position: absolute;
+  left: 10px;
 
   @media (min-width: 576px) {
     width: 25%;
   }
+
   .logo__line--one {
-    fill:$white
+    fill: $white
   }
+
   .logo__line--two {
     fill: none;
     stroke: $white;
     stroke-width: 6;
     stroke-miterlimit: 10;
   }
-  .logo__line--three{
+
+  .logo__line--three {
     fill: $secondaryColor;
   }
 }
-.logo_n{
+
+.logo_n {
   display: block;
   position: relative;
   margin: 50px auto 20px;
   width: 110px;
   height: 110px;
+
   .logo__line--one {
-    fill:$white
+    fill: $white
   }
+
   .logo__line--two {
     fill: none;
     stroke: $white;
@@ -109,14 +121,16 @@
     stroke-miterlimit: 10;
   }
 }
+
 .icon_close {
   width: 50px;
   height: 50px;
   position: absolute;
   right: 8px;
   top: 20px;
+
   .icon_close--line {
-    fill:$white;
+    fill: $white;
     transform: scale(1.5)
   }
 }
@@ -131,32 +145,36 @@
   z-index: $Zmenu-mobile;
   background-color: $mainColor;
   transition: top 0.6s;
+
   &.open {
     top: 0;
   }
+
   .menu__list {
     list-style: none;
     text-align: center;
     margin: 10px auto;
     padding: 0;
     width: 50%;
+
     .menu__list--item {
       padding: 10px 0;
       border-bottom: 1px solid $white;
-      a{
+
+      a {
         color: $white;
         font-size: 2rem;
         font-family: $outstanding;
         font-weight: 700;
       }
+
       &:last-child {
         border-bottom: none;
       }
     }
   }
-  
+
   @media (min-width: 576px) {
     display: none
   }
 }
-
