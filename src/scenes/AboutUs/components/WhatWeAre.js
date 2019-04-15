@@ -7,7 +7,7 @@ import _ from "lodash";
 const WhatWeAre = () => {
 
   return (
-    <div className="sections__texts container about-us">
+    <div className="container about-us">
       <div className="row">
         <div className="col-12 d-flex justify-content-center mb-3 mb-md-5">
           <HeadTitle title={_.toUpper(localization.aboutUs.about)} color={'#FFA59E'} lineColor={'#FFA59E'} />

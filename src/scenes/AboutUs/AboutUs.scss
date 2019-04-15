@@ -2,10 +2,12 @@
 
 .about-us {
   height: 100vh;
+  min-height: 700px;
   padding-top: $heightHeaderMobile + px;
 
   @media (min-width: 576px) {
-    padding-top: $heightHeaderDesktop + 20 + px;
+    padding-top: 50px;
+    height: 600px;
   }
 
   .about-us__img {

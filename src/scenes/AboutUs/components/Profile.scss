@@ -1,0 +1,43 @@
+@import '../../../Scss/variables.scss';
+
+
+.profile {
+  display: block;
+  margin-bottom: 20px;
+
+  .profile__img {
+    display: flex;
+    justify-content: center;
+
+    .frame {
+      width: 70%;
+    }
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .profile__text {
+    text-align: left;
+
+    h3 {
+      font-family: $outstanding;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      font-family: $general;
+    }
+
+    .profile__text {
+      font-family: $outstanding;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+}

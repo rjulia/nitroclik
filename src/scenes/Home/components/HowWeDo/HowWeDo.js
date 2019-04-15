@@ -4,7 +4,7 @@ import InViewMonitor from '../../../../Components/InViewMonitor/InViewMonitor';
 import { ResponsiveImage, HeadTitle, ButtonDown } from "../../../../Components/index.components";
 import styled from 'styled-components';
 import SquareHow from "./SquareHow";
-import { Launch, Idea, Test } from "../../../../Components/index.components";
+import { Idea, Launch, Test } from "../../../../Assets/index.assets";
 import _ from "lodash";
 import localization from "../../../../localization";
 import zenscroll from 'zenscroll'

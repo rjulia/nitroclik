@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { HeaderSection, AppIcon, ServerIcon, SoftwareIcon } from "../../Components/index.components";
+import { HeaderSection } from "../../Components/index.components";
+import { AppIcon, ServerIcon, SoftwareIcon, GraphicIcon } from "../../Assets/index.assets";
+import ScrollAnimateInLineSvg from "./components/IconFrame";
 import _ from "lodash";
 import localization from '../../localization/index';
 import './Services.scss';
@@ -27,7 +29,8 @@ class Services extends Component {
             <div className="row">
               <div className="col-4">
                 <div className="services__iconbox">
-                  <AppIcon className={"services__iconbox--icon"} />
+                  <ScrollAnimateInLineSvg SvgElement={GraphicIcon()} />
+                  {/* <GraphicIcon className={"services__iconbox--icon"} /> */}
                   <span className="services__iconbox--text">{localization.services.grafhic.title}</span>
                 </div>
               </div>
