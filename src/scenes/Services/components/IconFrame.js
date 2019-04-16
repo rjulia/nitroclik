@@ -1,5 +1,5 @@
 import React from 'react'
-import SvgLines from 'react-mt-svg-lines';
+import MtSvgLines from 'react-mt-svg-lines';
 import InViewMonitor from '../../../Components/InViewMonitor/InViewMonitor';
 import '../Services.scss';
 
@@ -10,12 +10,15 @@ const ScrollAnimateInLineSvg = ({ SvgElement }) => (
     classNameInView="services__iconbox--icon"
     childPropsInView={{ animate: true }}
   >
-    <SvgLines
+    <MtSvgLines
       duration={1500}
+      stagger={50}
+      timing="ease-in"
       fade
+      jsOnly={false}
     >
       {SvgElement}
-    </SvgLines>
+    </MtSvgLines>
   </InViewMonitor>
 )
 

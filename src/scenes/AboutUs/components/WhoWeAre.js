@@ -11,7 +11,7 @@ const WhoWeAre = () => {
   console.log(list)
   return (
     <Fragment>
-      <div className="col-12 d-flex justify-content-center mb-3 mb-md-5">
+      <div className="col-12 mt-5 d-flex justify-content-center mb-3 mb-md-5">
         <HeadTitle title={_.toUpper(localization.aboutUs.who)} color={'#FFA59E'} lineColor={'#FFA59E'} />
 
       </div>

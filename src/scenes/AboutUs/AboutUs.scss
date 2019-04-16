@@ -2,7 +2,8 @@
 
 .about-us {
   //height: 100vh;
-  min-height: 700px;
+  height: auto;
+  display: block;
   padding-top: $heightHeaderMobile + px;
 
   .headTitle {
@@ -15,7 +16,7 @@
 
   @media (min-width: 576px) {
     padding-top: 50px;
-    height: 600px;
+    //height: 600px;
     // .d-flex .headTitle {
     //   height: 75px;
     //   .headTitle__text {
@@ -56,6 +57,8 @@
   }
 
   @media (min-width: 576px) {
+    min-height: 100%;
+
     .about-us__img {
       height: auto;
 
