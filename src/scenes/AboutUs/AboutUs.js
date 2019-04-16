@@ -21,8 +21,14 @@ class AboutUs extends Component {
           title={_.toUpper(localization.aboutUs.title)}
           subtitle={_.toUpper(localization.aboutUs.subtitle)}
         />
-        <WhatWeAre />
-        <WhoWeAre />
+        <div className="container about-us">
+          <div className="row">
+            <WhatWeAre />
+            <WhoWeAre />
+
+          </div>
+        </div>
+
       </div>
     );
   }

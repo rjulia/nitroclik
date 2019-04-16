@@ -59,7 +59,7 @@ const HowWeDo = () => {
                 icon={<Idea className={'icon'} />}
                 text={_.toUpper(localization.home.planning)} />
               <div className="how-we-do__commet">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
+                <p> {localization.home.planning_text}</p>
               </div>
             </InViewMonitor>
           </div>
@@ -73,7 +73,7 @@ const HowWeDo = () => {
                 icon={<Launch className={'icon'} />}
                 text={_.toUpper(localization.home.building)} />
               <div className="how-we-do__commet">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
+                <p> {localization.home.building_text}</p>
               </div>
 
             </InViewMonitor>
@@ -87,7 +87,8 @@ const HowWeDo = () => {
                 icon={<Test className={'icon'} />}
                 text={_.toUpper(localization.home.testing)} />
               <div className="how-we-do__commet">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda</p>
+                <p> {localization.home.testing_text}</p>
+
               </div>
             </InViewMonitor>
           </div>

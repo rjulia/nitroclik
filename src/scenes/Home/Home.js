@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <div className="d-flex row flex-column">
         <HeroImage />
-        <div className="container">
+        <div className="container overflow-hidden">
           <InViewMonitor
             classNameNotInView='vis-hidden'
             classNameInView='animated fadeInUp'>

@@ -1,43 +1,55 @@
 @import '../../../../scss/variables.scss';
 
-.contact-us{
-    height: 100vh;
-    padding-top: $heightHeaderMobile + px;
-    @media (min-width: 576px) {
-      padding-top: $heightHeaderDesktop + 20 + px;
-    }
-    .contact-us__img--img{
-      width: 100%;
-      height: auto;
-      display: none;
-    }
-    .contact-us__txt {
-      padding: 20px 10px;
-  
-      .contact-us__txt--parf{
-        color: $text;
-        font-family: $general;
-        font-size: 1rem;
-  
-      }
-    }
-    .btn {
-      background-color: $mainColor;
-      border-radius: none;
-      border: none;
-    }
-    @media (min-width: 576px) {
-      .contact-us__img--img{
-        display: block;
-        height: auto;
-      }
-      .contact-us__txt {
-        padding: 40px;
-    
-        .contact-us__txt--parf{
-          font-size: 1.3rem; 
-  
-        }
-      }  
+.contact-us {
+  height: 100vh;
+  padding-top: $heightHeaderMobile + px;
+
+  @media (min-width: 576px) {
+    padding-top: $heightHeaderDesktop + 20 + px;
+  }
+
+  .contact-us__img--img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .contact-us__txt {
+    font-family: $outstanding;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+
+  .contact-us__form {
+    padding: 20px 10px;
+
+    .contact-us__from--parf {
+      color: $text;
+      font-family: $general;
+      font-size: 1rem;
+
     }
   }
+
+  .btn {
+    background-color: $mainColor;
+    border-radius: none;
+    border: none;
+  }
+
+  @media (min-width: 576px) {
+    .contact-us__img--img {
+      display: block;
+      height: auto;
+    }
+
+    .contact-us__form {
+      padding: 40px;
+
+      .contact-us__form--parf {
+        font-size: 1.3rem;
+
+      }
+    }
+  }
+}

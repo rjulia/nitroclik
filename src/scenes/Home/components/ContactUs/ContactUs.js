@@ -15,9 +15,12 @@ const ContactUs = () => {
             lineColor={'#FFA59E'} />
 
         </div>
+        <div className="col-12  d-flex justify-content-center">
+          <p className="contact-us__txt">{_.capitalize(localization.home.conctact_text)}</p>
+        </div>
       </div>
       <div className="row">
-        <div className="col-12 col-md-6 contact-us__txt">
+        <div className="col-12 col-md-6 contact-us__form">
           <ContactForm />
         </div>
         <div className="col-12 col-md-6 contact-us__img">

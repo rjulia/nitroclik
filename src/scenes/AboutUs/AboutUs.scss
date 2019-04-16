@@ -1,13 +1,27 @@
 @import '../../scss/variables.scss';
 
 .about-us {
-  height: 100vh;
+  //height: 100vh;
   min-height: 700px;
   padding-top: $heightHeaderMobile + px;
+
+  .headTitle {
+    height: 45px;
+
+    .headTitle__text {
+      font-size: 2.5rem;
+    }
+  }
 
   @media (min-width: 576px) {
     padding-top: 50px;
     height: 600px;
+    // .d-flex .headTitle {
+    //   height: 75px;
+    //   .headTitle__text {
+    //     font-size: 4rem;
+    //   }
+    // }
   }
 
   .about-us__img {
@@ -27,10 +41,16 @@
     text-align: center;
     padding: 20px 10px;
 
+    h3 {
+      font-family: $outstanding;
+      font-size: 30px;
+      font-weight: 400;
+    }
+
     .about-us__txt--parf {
       color: $text;
       font-family: $general;
-      font-size: 1rem;
+      font-size: 16px;
 
     }
   }
@@ -48,8 +68,15 @@
     .about-us__txt {
       padding: 20px;
 
+      h3 {
+        font-family: $outstanding;
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+
       .about-us__txt--parf {
-        font-size: 1.3rem;
+        font-size: 18px;
 
       }
     }
