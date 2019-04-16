@@ -59,11 +59,9 @@ class ContacUs extends Component {
           subtitle={_.toUpper(localization.contact.subtitle)}
         />
         <div className="container justify-content-md-center py-5 row">
-          <div className="col-12 col-md-6 justify-content-center">
-            <p>Here some text</p>
+          <div className="col-12 justify-content-center text-center mb-5">
+            <p>{localization.home.conctact_text}</p>
           </div>
-        </div>
-        <div className="container justify-content-md-center py-5 row">
           <div className="col-12 col-md-6">
             <ContactForm
               data={this.props.data}

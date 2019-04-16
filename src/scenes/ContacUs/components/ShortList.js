@@ -10,7 +10,7 @@ export default ({
   const hasFavourites = (favourites.length > 0)
   const favList = favourites.map((fav, i) => {
     return (
-      <Name 
+      <Name
         id={i}
         key={i}
         info={data[fav]}
@@ -21,7 +21,7 @@ export default ({
   return (
     <div className="favourites">
       <h4>
-        {hasFavourites 
+        {hasFavourites
           ? 'Your Shortlist'
           : 'Click on a services aboves to shortlist it..'
         }
@@ -29,7 +29,7 @@ export default ({
       <ul>
         {favList}
       </ul>
-      {hasFavourites && <hr/>}
+      {hasFavourites && <hr />}
     </div>
   )
 }

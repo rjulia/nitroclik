@@ -1,18 +1,18 @@
 import React from 'react'
 
 import Service from './Service'
-export default ({ 
-  data, 
-  filter, 
-  favourites, 
-  addFavourite 
-}) => { 
-  
+export default ({
+  data,
+  filter,
+  favourites,
+  addFavourite
+}) => {
+  console.log(favourites)
   const names = data
     .map((person, i) => {
-    // only display names that match current input string
+      // only display names that match current input string
       return (
-        <Service 
+        <Service
           id={person.id}
           key={i}
           info={person}
@@ -20,11 +20,14 @@ export default ({
         />
       )
     })
-  
+  const namesfinal = names.filter(function (e) {
+    return this.indexOf(parseInt(e.key)) < 0;
+  }, favourites
+  )
   /* ##### the component's output ##### */
-  return ( 
-    <ul className="services-list"> 
-      {names}
+  return (
+    <ul className="services-list">
+      {namesfinal}
     </ul>
   )
 }
