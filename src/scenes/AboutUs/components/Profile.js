@@ -2,7 +2,7 @@ import React from 'react';
 import './Profile.scss'
 
 const Profile = (props) => {
-  const { name, picture, position, bio } = props.people;
+  const { name, picture, position } = props.people;
 
   return (
     <div className="col-12 col-md-3 profile">

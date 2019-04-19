@@ -36,33 +36,33 @@ class Header extends Component {
   }
   listenScrollEvent = e => {
     if (window.scrollY >= this.state.screenHeight) {
-      this.setState({classAdd: 'dark'})
+      this.setState({ classAdd: 'dark' })
     } else {
-      this.setState({classAdd: ''})
+      this.setState({ classAdd: '' })
     }
   }
-  
+
   componentDidMount() {
-    const {pathname}  =  this.props.location;
+    const { pathname } = this.props.location;
     if (pathname !== '/') {
-      this.setState({classUrl: 'dark'})
+      this.setState({ classUrl: 'dark' })
     } else {
-      this.setState({classUrl: ''})
+      this.setState({ classUrl: '' })
     }
 
     window.addEventListener('scroll', this.listenScrollEvent)
     this.setState({
-        screenHeight: window.innerHeight,
+      screenHeight: window.innerHeight,
     })
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.location.pathname !== nextProps.location.pathname) {
-      const {pathname}  =  nextProps.location;
+      const { pathname } = nextProps.location;
       if (pathname !== '/') {
-        this.setState({classUrl: 'dark'})
+        this.setState({ classUrl: 'dark' })
       } else {
-        this.setState({classUrl: ''})
+        this.setState({ classUrl: '' })
       }
     }
   }
@@ -71,10 +71,10 @@ class Header extends Component {
   render() {
     return (
       <div className={`container__header d-flex justify-content-center row ${this.state.classAdd} ${this.state.classUrl}`} >
-        <div className="header container">
-          <Logo/>
-          <MainMenuHeaderMobile {...this.props}/>
-          <MainMenuDesktop/>
+        <div className="header">
+          <Logo />
+          <MainMenuHeaderMobile {...this.props} />
+          <MainMenuDesktop />
         </div>
       </div>
     );

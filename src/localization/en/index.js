@@ -75,7 +75,7 @@ export default {
 
     grafhic: {
       title: 'Branding & Graphic Design',
-      text: 'If you come to us with a business concept we can help you take it from idea to reality. If you think your existing communications material, perhaps your logo design or web design, looks tired or out of date, then we can help to breathe life back into your company’s image. As a leading London web design company we will help you improve brand value and also as a result create a lasting impression with your clients.',
+      text: 'If you come to us with a business concept we can help you take it from idea to reality. If you think your existing communications material, perhaps your logo design or web design, looks tired or out of date, then we can help to breathe life back into your company’s image.',
       ser1: 'Brand Consulting',
       ser2: 'Logo Design',
       ser3: 'Branding Guideline',
@@ -95,7 +95,7 @@ export default {
     },
     marketing: {
       title: 'Digital Marketing',
-      text: 'We work with all our clients to ensure that once their web site has been launched it generates return on investment. As a leading London web design company once your web site has been launched we will remedy any faults found on the web site where it does not function in accordance with the specifications delivered at the start of the project. We can provide maintenance and hosting contracts. In the unlikely event that your web site develops an issue then we respond quickly.',
+      text: 'We work with all our clients to ensure that once their web site has been launched it generates return on investment. As a  Hong Kong web design company once your web site has been launched we will remedy any faults found on the web site where it does not function in accordance with the specifications delivered at the start of the project. We can provide maintenance and hosting contracts. In the unlikely event that your web site develops an issue then we respond quickly.',
       ser1: 'SEO & SEM',
       ser2: 'Digital Growth',
       ser3: 'Social Media Marketing',
