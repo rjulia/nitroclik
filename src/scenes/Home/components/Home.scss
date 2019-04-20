@@ -1,0 +1,19 @@
+@import '../../../scss/variables.scss';
+
+.home {
+
+  .home__main--title {
+    padding-top: $heightHeaderDesktop + 50 + px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      font-family: $outstanding;
+      font-size: 18px;
+      width: auto;
+    }
+  }
+}

@@ -11,7 +11,7 @@ const ScrollAnimateInLineSvg = ({ SvgElement }) => (
     childPropsInView={{ animate: true }}
   >
     <MtSvgLines
-      duration={1500}
+      duration={2000}
       stagger={50}
       timing="ease-in"
       fade

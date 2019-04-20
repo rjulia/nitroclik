@@ -25,7 +25,7 @@ export default {
   },
   home: {
     whatwe_title: 'what we do',
-
+    main_title: 'Web, Mobile App and Branding design are our passion',
     howwedo: 'how we do',
     planning: 'planning and designing',
     building: 'building and developing',
