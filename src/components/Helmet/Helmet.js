@@ -6,7 +6,6 @@ const canonical = window.location.href;  // this don't work, says ReferenceError
 const Layout = (WrappedComponnet, props) => {
   return class Layout extends Component {
     render() {
-      console.log(props)
       return (
         <Fragment>
 

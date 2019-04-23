@@ -2,9 +2,10 @@
 
 
 /* ##### NamesList ##### */
-.services-list, .favourites {
+.services-list,
+.favourites {
   padding: 0;
- 
+
   li {
     position: relative;
     list-style: none;
@@ -13,13 +14,15 @@
     margin: 2px;
     border-radius: 3px;
     background-color: $mainColor;
+
     &:hover {
       cursor: pointer;
     }
   }
 }
+
 .favourites {
-  ul{
+  ul {
     padding-left: 0;
   }
 }
@@ -41,8 +44,9 @@
   background: #ff6347;
   border: solid 2px #fff;
   color: #fff;
-  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
+
 .favourites h4 {
   padding: 1rem 0;
   font-weight: 400;
@@ -50,6 +54,7 @@
   margin: 0;
   color: #b3b3b3;
 }
+
 .favourites hr {
   border-bottom: 0;
   border-top: solid 1px #e6e6e6;
@@ -61,9 +66,11 @@
   padding: 1rem 0;
   color: #b3b3b3;
 }
+
 .credit a {
   color: #3498db;
 }
+
 button {
   background: #d7d7d7;
   color: #3b3b3b;
@@ -71,10 +78,12 @@ button {
   font-size: 0.8rem;
   border: solid 1px #c7c7c7;
   margin: 1rem 0;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   outline: none;
+  cursor: pointer;
 }
+
 button:hover {
   background: #ddd;
 }

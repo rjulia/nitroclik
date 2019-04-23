@@ -14,7 +14,7 @@
     position: relative;
 
     @media (min-width: 576px) {
-      height: 75px;
+      height: 67px;
     }
 
   }
@@ -28,7 +28,7 @@
     color: $white;
 
     @media (min-width: 576px) {
-      font-size: 4rem;
+      font-size: 3.5rem;
 
     }
   }
@@ -55,4 +55,25 @@
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
   }
 
+}
+
+
+.NameTitle {
+  font-size: 24px;
+  font-family: $general;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  .NameTitle_first {
+    border: 3px solid $mainColor;
+    text-align: center;
+    width: 45px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-right: 5px;
+    display: inline-block;
+    padding: 2px 11px 2px;
+    font-family: $general;
+    color: $mainColor;
+  }
 }

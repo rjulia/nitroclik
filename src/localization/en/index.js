@@ -62,7 +62,10 @@ export default {
     about_tl2: 'we work end-to-end',
     about_tx2_a: 'We help clients develop more successful products and propositions',
     about_tx2_b: 'Using an end-to-end process we call Meaningful Design that brings together the best of Design Thinking, Lean Startup and Agile.',
-    who: 'who we are'
+    who: 'who we are',
+    button_open: 'Open Bio',
+    button_closed: 'Open Bio',
+
   },
   contact: {
     title: 'Contact us',

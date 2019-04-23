@@ -11,18 +11,18 @@ export default [
   },
   {
     id: 2,
-    value: 'web design',
+    value: 'web-design',
     name: 'Web design'
   },
   {
     id: 3,
-    value: 'web-project',
-    name: 'Web project'
+    value: 'graphic-design',
+    name: 'Graphic design'
   },
   {
     id: 4,
-    value: 'web-project',
-    name: 'Web project'
+    value: 'web-cms',
+    name: 'Web & CMS'
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export default [
   {
     id: 7,
     value: 'mobil-app',
-    name: 'App mobile'
+    name: 'Mobile App'
   },
   {
     id: 8,
@@ -47,7 +47,7 @@ export default [
   {
     id: 9,
     value: 'e-commerce',
-    name: 'E-commerce'
+    name: 'Saas'
   },
 
   {
@@ -74,5 +74,10 @@ export default [
     id: 14,
     value: 'hosting',
     name: 'Hosting'
+  },
+  {
+    id: 15,
+    value: 'others',
+    name: 'Others'
   }
 ]

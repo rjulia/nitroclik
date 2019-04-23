@@ -3,6 +3,7 @@ import data from "../../data/data";
 
 const filtersReducerDefaultState = {
     isOpen: false,
+    isOpenModal: false,
     data: []
 };
 
@@ -12,6 +13,11 @@ export default (state = filtersReducerDefaultState, action) => {
             return {
                 ...state,
                 isOpen: action.isOpen
+            };
+        case 'ISOPENMODAL':
+            return {
+                ...state,
+                isOpenModal: action.isOpenModal
             };
         case 'GETDATA':
             return {

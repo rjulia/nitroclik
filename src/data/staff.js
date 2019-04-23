@@ -1,9 +1,9 @@
 export default [
   {
     name: 'Ramon Julia',
-    picture: './assets/images/profile.jpg',
+    picture: './assets/images/ramon_profile.jpg',
     position: 'Web Developer Lead',
-    bio: "Ramon is Spanish-born, English and Spanish speaking Designer and Web Developer. With over a two decade’s worth of experience, in  multiple software development projects in web and cloud base. After working in a star-up, small and big companies "
+    bio: "Ramon is a web designer and developer born in Spanish, English and Spanish speaking, with more than two decades of experience, in multiple project, with both disciplines, graphic design and software development. After working in an star-up, small and large companies in Spain and Hong Kong, this is time to be part of a new team, eager to face new challenges. Passionate always by the learn every day something new, either to learn the latest technologies or Cantones."
   },
   {
     name: 'Jani Siivola',

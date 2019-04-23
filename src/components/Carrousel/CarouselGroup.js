@@ -16,21 +16,21 @@ const imagesHomeOne = {
   small: './assets/images/home_one_340.jpg',
   medium: './assets/images/home_one_768.jpg',
   large: './assets/images/home_one_1280.jpg',
-  xlarge: './assets/images/home_one_3200.jpg'
+  xlarge: './assets/images/home_one_1280.jpg'
 }
 
 const imagesHomeTwo = {
   small: './assets/images/home_two_340.jpg',
   medium: './assets/images/home_two_768.jpg',
   large: './assets/images/home_two_1280.jpg',
-  xlarge: './assets/images/home_two_3200.jpg'
+  xlarge: './assets/images/home_two_1280.jpg'
 }
 
 const imagesHomeThree = {
   small: './assets/images/home_three_340.jpg',
   medium: './assets/images/home_three_768.jpg',
   large: './assets/images/home_three_1280.jpg',
-  xlarge: './assets/images/home_three_3200.jpg'
+  xlarge: './assets/images/home_three_1280.jpg'
 }
 
 const items = [

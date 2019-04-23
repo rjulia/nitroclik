@@ -5,8 +5,12 @@ export { default as Input } from './Forms/Input/Input';
 export { default as ContactForm } from './Forms/ContactForm/ContactForm';
 export { default as HeaderSection } from './HeaderSection/HeaderSection';
 export { default as Card } from './Card/Card';
-export { default as ButtonDown } from './buttons/ButtonDown';
-export { default as InviewMonitor } from './InViewMonitor/InViewMonitor';
+export { default as ButtonDown } from './Buttons/ButtonDown';
+export { default as Modal } from './Modal/Modal';
+export { default as Button } from './Buttons/Button';
+export { default as NameTitle } from './HeadTitle/NameTitle';
+
+
 
 
 

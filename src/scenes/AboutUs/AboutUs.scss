@@ -10,19 +10,20 @@
     height: 45px;
 
     .headTitle__text {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 
   @media (min-width: 576px) {
     padding-top: 50px;
-    //height: 600px;
-    // .d-flex .headTitle {
-    //   height: 75px;
-    //   .headTitle__text {
-    //     font-size: 4rem;
-    //   }
-    // }
+
+    .headTitle {
+      height: 67px;
+
+      .headTitle__text {
+        font-size: 3.5rem;
+      }
+    }
   }
 
   .about-us__img {
