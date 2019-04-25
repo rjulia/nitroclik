@@ -88,7 +88,7 @@ class ContacUs extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    data: state.data
+    data: state.modal.data
   }
 }
 

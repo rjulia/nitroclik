@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 import AppRouter from './Routers/AppRouter';
 import { Provider } from 'react-redux';
-import store from './Store/Store';
+import store from './Store/store';
 
 
 

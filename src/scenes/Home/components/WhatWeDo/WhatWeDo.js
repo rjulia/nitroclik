@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './WhatWeDo.scss';
-import { HeadTitle, ButtonDown } from "../../../../Components/index.components";
+import { HeadTitle, ButtonDown, Button } from "../../../../Components/index.components";
 import localization from "../../../../localization";
 import _ from "lodash";
 import zenscroll from 'zenscroll'
+import { NavLink } from "react-router-dom";
 
 
 const scrollToDown = () => {
@@ -71,6 +72,11 @@ class WhatWeDo extends Component {
                 <li>{localization.services.cloud.ser5}</li>
               </ul>
             </div>
+          </div>
+          <div className="col-12 d-flex justify-content-center">
+            <NavLink to="/services" className="d-flex justify-content-center">
+              <Button text="Read more" />
+            </NavLink>
           </div>
         </div>
         <ButtonDown handleClick={scrollToDown} />

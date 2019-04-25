@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { HeroImage, WhatWeDo, HowWeDo, ContactUs } from './components/index';
 import Layout from '../../Components/Helmet/Helmet'
 import InViewMonitor from '../../Components/InViewMonitor/InViewMonitor'

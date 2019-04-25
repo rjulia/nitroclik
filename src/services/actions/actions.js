@@ -12,3 +12,4 @@ export const isopenmodal = (isOpenModal) => ({
     type: 'ISOPENMODAL',
     isOpenModal: isOpenModal
 });
+

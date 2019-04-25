@@ -6,6 +6,12 @@
   display: block;
   padding-top: $heightHeaderMobile + px;
 
+  .about__description {
+    font-size: 18px;
+    color: $text;
+    margin: 50px 0 150px;
+  }
+
   .headTitle {
     height: 45px;
 
@@ -16,6 +22,11 @@
 
   @media (min-width: 576px) {
     padding-top: 50px;
+
+    .about__description {
+      font-size: 24px;
+
+    }
 
     .headTitle {
       height: 67px;

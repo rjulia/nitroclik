@@ -23,6 +23,9 @@ class AboutUs extends Component {
         />
         <div className="container about-us">
           <div className="row">
+            <p
+              dangerouslySetInnerHTML={{ __html: localization.aboutUs.text }}
+              className="about__description" />
             <WhatWeAre />
             <WhoWeAre />
 

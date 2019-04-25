@@ -1,4 +1,5 @@
-export default {
+const en = {
+  homes: "home",
   menu: {
     home: 'home',
     aboutus: 'about us',
@@ -10,7 +11,7 @@ export default {
     one: {
       altText: 'Innovate',
       caption: 'Innovate',
-      subtitle: 'Innovate to offer the best for your project'
+      subtitle: 'An innovate to offer the best for your project'
     },
     two: {
       altText: 'Create',
@@ -30,11 +31,11 @@ export default {
     planning: 'planning and designing',
     building: 'building and developing',
     testing: 'testing and delivery',
-    planning_text: 'We can create your brand, website or app, or redesign if it is outdated, planning each step, leaving nothing to chance.',
-    building_text: 'We use the latest technologies and all our knowledge to give you a better performance on your brand, website or app, working with the best tools available in the current market.',
+    planning_text: 'We can create your brand, website or app, or redesign if it needs to be enhanced, planning each step together, leaving nothing to chance.',
+    building_text: 'We build the best solutions for you, using both market options, such as Drupal, Shopify or web made to average, everything depends on your needs.',
     testing_text: 'We like to be a retailer and not leave anything to chance, so we review all aspects of your brand, website or app, so they look as they deserve.',
     conctact: "how we start",
-    conctact_text: 'Write us a message and we will contact you right away, we will be happy to help you in every detail of the image of your company.',
+    conctact_text: 'Write us a message and we will contact you right away, we will be happy to help you in branding of your company from ideation to visualization',
     form_name: "Your name *",
     form_email: "Email *",
     form_phone: "Phone *",
@@ -54,9 +55,8 @@ export default {
   },
   aboutUs: {
     title: 'About us',
-    subtitle: "Let's start today to build somrthing pretty awesome",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel nunc nec leo tempor consequat. Nunc ac dapibus mauris. Curabitur a velit at eros iaculis gravida. Integer id porta mauris. Nullam pharetra tortor quis orci ornare mollis. Suspendisse potenti. Sed ut dictum risus, id sodales purus.",
-    about: 'what we are',
+    subtitle: "Let's start today to build something pretty awesome",
+    text: "As individual people, we have been in the industry for long and working as independent branding consultants, manager, CTO or entrepreneur in different companies. We come from different  cultures and visions, and now as a team,  we put all our knowledge together to build a company capable of offering the best of design, programming and finishing our results.",
     about_tl1: 'We are consulting',
     about_tx1: 'We transform businesses and help our clients outpace digital disruption—by designing new business models and enhancing existing ones.',
     about_tl2: 'we work end-to-end',
@@ -65,6 +65,7 @@ export default {
     who: 'who we are',
     button_open: 'Open Bio',
     button_closed: 'Open Bio',
+    about: "what we are"
 
   },
   contact: {
@@ -84,11 +85,10 @@ export default {
       ser3: 'Branding Guideline',
       ser4: 'Brouchures & Flyers',
       ser5: 'Catalogue',
-      ser6: 'Packging',
     },
     web: {
       title: 'Web & App development',
-      text: 'We have over 14 years experience in building web sites and business & consumer applications. We can design a simple WordPress portfolio website or a bespoke fully content managed eCommerce web site solution or even a bespoke web application. Our years of experience building and designing websites means we have a range of options at our fingertips and the right people on board to deliver.',
+      text: 'We have over 14 years experience in building web sites and business & consumer applications. We can design a simple WordPress portfolio website or a bespoke fully content managed eCommerce website solution or even a bespoke web application. Our years of experience building and designing websites means we have a range of options at our fingertips and the right people on board to deliver.',
       ser1: 'Resposive Website',
       ser2: 'App IOS & Android',
       ser3: 'Drupal or Custom CMS',
@@ -104,7 +104,6 @@ export default {
       ser3: 'Social Media Marketing',
       ser4: 'Mail Campaign',
       ser5: 'Content Marketing',
-      ser6: 'Marketing Automation',
     },
     cloud: {
       title: 'Cloud & SaaS & More',
@@ -117,3 +116,5 @@ export default {
   }
 
 }
+
+export default en;

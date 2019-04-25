@@ -1,0 +1,90 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-class name="mjclass" color="green" font-size="30px" />
+    </mj-attributes>
+    <mj-style>
+      .back-black div {
+        color: white;
+        padding: 2px;
+        align-vertical: middle
+      }
+
+      @media only screen and (min-width:480px) {
+        .block-logo img {
+          padding: 65% 10px 0 10px
+        }
+      }
+
+      @media only screen and (max-width:480px) {
+        .block-logo img {
+          padding: 15% 10px 0 10px
+        }
+      }
+
+      .back-white {
+        height: 400px;
+        background-color:
+          #fff;
+        height: 487px;
+      }
+
+      a:link {
+        color: #ffa59e;
+      }
+
+      a:visited {
+        color: #ffa59e;
+      }
+
+      a:hover {
+        color: #ffa59e;
+      }
+
+      a:active {
+        color: #d6dde5;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#d6dde5">
+    <mj-section background-color="#ffa59e" padding="0">
+      <mj-column css-class="block-logo" width="50%" vertical-align="middle">
+        <mj-image width="250px" href="http://nitroclik.com" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/logo.png?alt=media&token=c2497453-dfd2-4ed1-bc6b-91aab0b5b328" alt="Nitroclik logo" align="center" padding="0"></mj-image>
+
+        <mj-text css-class="back-black" align="center" font-size="16px" padding="0">
+          <p style="font-size: 15px; line-height: 18px; color: #ffffff"> Getting your message to the world
+          </p>
+        </mj-text>
+
+      </mj-column>
+      <mj-column width="50%">
+
+        <mj-image href="http://nitroclik.com/services" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/sunset2.jpg?alt=media&token=534b8dd9-3fa6-4550-8e10-d15f5731ff7a" alt="Racoon logo" align="center" padding="0px"></mj-image>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-image href="http://nitroclik.com" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/contact2.jpg?alt=media&token=019fe622-7d8e-49c9-88e2-0492c257e87d" alt="Racoon logo" align="center" padding="0px"></mj-image>
+      </mj-column>
+      <mj-column width="50%" css-class="back-white">
+        <mj-image width="60px" height="60px" padding="40px 25px" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/n.png?alt=media&token=c2b56822-e29f-4bc6-80d3-dadab9fbfa56" />
+        <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding="0 20px" />
+        <mj-text align="center" padding="20px">
+
+          <p style="font-size: 15px; line-height: 18px; color: #666666"> We offer and designed brands, designs, websites and services to create new and outstanding your brand and to your customers experiences. Call or email us and let start together to getting your message to the world
+          </p>
+
+        </mj-text>
+        <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding="0 20px" />
+        <mj-image width="21px" height="15px" padding="20px 0 0" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/sobre.png?alt=media&token=01eb3e88-3b09-43d7-9b29-ef484b5fc718" />
+        <mj-text align="center" padding="10px 0 20px"> <a href="mailto:info@nitroclik.com">info@nitroclik.com</a>
+
+
+        </mj-text>
+        <mj-image width="13px" height="22px" padding="0 0" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/movil.png?alt=media&token=e2d3e77e-2712-45d7-9f61-a522cb70a59f" />
+        <mj-text align="center" padding="10px 0 20px" color="#ffa59e">
+          <p></p> + 852 9321 0542
+
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
