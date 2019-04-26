@@ -18,8 +18,10 @@ const Home = (props) => {
         <Parallax
           blur={10}
           bgImage={'./assets/images/white_color.jpg'}
-          bgImageAlt="the cat"
+          bgImageAlt="how we are"
           strength={600}
+          bgClassName='home--image__paralax'
+
         >
           <div className="container d-flex justify-content-center">
             <div className="home__main--title">

@@ -49,7 +49,7 @@ const MainMenuMobile = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    isOpen: state.isOpen
+    isOpen: state.modal.isOpen
   }
 }
 

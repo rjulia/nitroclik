@@ -7,21 +7,26 @@
   padding-top: $heightHeaderMobile + px;
 
   .about__description {
-    font-size: 18px;
+    font-size: 20px;
     color: $text;
     margin: 50px 0 150px;
+    text-align: center;
+    padding: 20px;
   }
 
   .headTitle {
-    height: 45px;
+    height: 58px;
+    padding: 0 2px;
 
     .headTitle__text {
-      font-size: 2rem;
+      font-size: 2.9rem;
     }
   }
 
   @media (min-width: 576px) {
     padding-top: 50px;
+    font-size: 18px;
+    padding: 0;
 
     .about__description {
       font-size: 24px;
@@ -52,6 +57,7 @@
 
   .about-us__txt {
     text-align: center;
+    font-size: 20px;
     padding: 20px 10px;
 
     h3 {
@@ -63,7 +69,7 @@
     .about-us__txt--parf {
       color: $text;
       font-family: $general;
-      font-size: 16px;
+      font-size: 20px;
 
     }
   }

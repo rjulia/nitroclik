@@ -14,6 +14,26 @@ const images = {
 
 class Services extends Component {
   render() {
+    const grafhicData = localization.services.grafhic.servicies
+    let grafhicArray = Object.keys(grafhicData).map(function (key) {
+      return grafhicData[key];
+    });
+
+    const webData = localization.services.web.servicies
+    let webArray = Object.keys(webData).map(function (key) {
+      return webData[key];
+    });
+
+    const marketingData = localization.services.marketing.servicies
+    let marketingArray = Object.keys(marketingData).map(function (key) {
+      return marketingData[key];
+    });
+
+    const cloudData = localization.services.cloud.servicies
+    let cloudArray = Object.keys(cloudData).map(function (key) {
+      return cloudData[key];
+    });
+
     return (
       <div className="sections row">
         <HeaderSection
@@ -35,12 +55,8 @@ class Services extends Component {
               </div>
               <div className="col-12 col-md-8 services__list">
                 <h3 className="services__title--text">{localization.services.grafhic.title}</h3>
-                <span>{localization.services.grafhic.ser1}</span>
-                <span>{localization.services.grafhic.ser2}</span>
-                <span>{localization.services.grafhic.ser3}</span>
-                <span>{localization.services.grafhic.ser4}</span>
-                <span>{localization.services.grafhic.ser5}</span>
-                <span>{localization.services.grafhic.ser6}</span>
+                {grafhicArray.map((grafic, idx) => (<span key={idx}>{grafic}</span>))}
+
                 <p>{localization.services.grafhic.text}</p>
               </div>
             </div>
@@ -49,11 +65,7 @@ class Services extends Component {
             <div className="row">
               <div className="col-12 order-2 order-md-1 col-md-8 services__list">
                 <h3 className="services__title--text">{localization.services.web.title}</h3>
-                <span>{localization.services.web.ser1}</span>
-                <span>{localization.services.web.ser2}</span>
-                <span>{localization.services.web.ser3}</span>
-                <span>{localization.services.web.ser4}</span>
-                <span>{localization.services.web.ser5}</span>
+                {webArray.map((grafic, idx) => (<span key={idx}>{grafic}</span>))}
                 <p>{localization.services.web.text}</p>
               </div>
               <div className="col-12 order-1 order-md-2 col-md-4">
@@ -74,11 +86,7 @@ class Services extends Component {
               </div>
               <div className="col-12 col-md-8 services__list">
                 <h3 className="services__title--text">{localization.services.marketing.title}</h3>
-                <span>{localization.services.marketing.ser1}</span>
-                <span>{localization.services.marketing.ser2}</span>
-                <span>{localization.services.marketing.ser3}</span>
-                <span>{localization.services.marketing.ser4}</span>
-                <span>{localization.services.marketing.ser5}</span>
+                {marketingArray.map((grafic, idx) => (<span key={idx}>{grafic}</span>))}
                 <p>{localization.services.marketing.text}</p>
               </div>
             </div>
@@ -87,12 +95,8 @@ class Services extends Component {
             <div className="row">
               <div className="col-12 order-2 order-md-1 col-md-8 services__list">
                 <h3 className="services__title--text">{localization.services.cloud.title} </h3>
-                <span>{localization.services.cloud.ser1}</span>
-                <span>{localization.services.cloud.ser2}</span>
-                <span>{localization.services.cloud.ser3}</span>
-                <span>{localization.services.cloud.ser4}</span>
-                <span>{localization.services.cloud.ser5}</span>
-                <p>{localization.services.marketing.text}</p>
+                {cloudArray.map((grafic, idx) => (<span key={idx}>{grafic}</span>))}
+                <p>{localization.services.cloud.text}</p>
 
               </div>
               <div className="col-12 col-md-4 order-1 order-md-2">

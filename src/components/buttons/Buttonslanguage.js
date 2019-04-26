@@ -8,7 +8,7 @@ class Buttonslanguage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      languageButtonText: 'ENG'
+      languageButtonText: '繁'
     }
   }
 
@@ -35,9 +35,9 @@ class Buttonslanguage extends Component {
 
   render() {
     return (
-      <div>
-        <h1 onClick={this.onLanguageButtonPress}> {this.state.languageButtonText}</h1>
-      </div>
+
+      <p className="menu__list--item not-line" onClick={this.onLanguageButtonPress}> {this.state.languageButtonText}</p>
+
     )
   }
 }

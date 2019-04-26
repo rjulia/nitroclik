@@ -1,12 +1,8 @@
 @import '../../../../scss/variables.scss';
 
 .contact-us {
-  height: 100vh;
+  height: 100%;
   padding-top: $heightHeaderMobile + px;
-
-  @media (min-width: 576px) {
-    padding-top: $heightHeaderDesktop + 20 + px;
-  }
 
   .contact-us__img--img {
     width: 100%;
@@ -16,8 +12,7 @@
 
   .contact-us__txt {
     font-family: $outstanding;
-    font-size: 18px;
-    margin-bottom: 45px;
+    font-size: 14px;
   }
 
   .contact-us__form {
@@ -38,9 +33,17 @@
   }
 
   @media (min-width: 576px) {
+    padding-top: $heightHeaderDesktop + 20 + px;
+    height: 100vh;
+
     .contact-us__img--img {
       display: block;
       height: auto;
+    }
+
+    .contact-us__txt {
+      margin-bottom: 45px;
+      font-size: 18px;
     }
 
     .contact-us__form {

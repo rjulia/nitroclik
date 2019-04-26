@@ -6,15 +6,10 @@
   padding: 0;
   overflow-y: hidden;
   flex-direction: column;
-  padding-top: $heightHeaderMobile + px;
-
-  @media (min-width: 576px) {
-    padding-top: 0;
-  }
 
   .how-we-do__container {
     height: 100vh;
-    padding-top: 110px;
+    padding-top: 60px;
   }
 
   .how-we-do__img {
@@ -62,12 +57,19 @@
   }
 
   @media (min-width: 576px) {
+    padding-top: 0;
+
     .how-we-do__commet {
       display: flex;
       width: 100%;
       max-width: 300px;
       align-items: center;
       min-height: 240px;
+    }
+
+    .how-we-do__container {
+      height: 100vh;
+      padding-top: 110px;
     }
   }
 }

@@ -1,7 +1,7 @@
 @import "../../../scss/variables.scss";
 
 .container__header {
-  overflow: hidden;
+
   position: fixed;
   /* Set the navbar to fixed position */
   top: 0;
@@ -17,6 +17,7 @@
   }
 
   @media (min-width: 576px) {
+    overflow: hidden;
     height: $heightHeaderDesktop + px;
     width: 100%;
   }
@@ -56,17 +57,29 @@
         display: flex;
         justify-content: space-between;
         margin: 0;
+        margin-right: 35px;
 
         .menu__list--item {
-          min-width: 100px;
-          margin-left: 25px;
-          color: $white;
           text-align: center;
-          display: inline-block;
-          padding: 0 10px 3px;
+          display: flex;
+          align-items: center;
+          min-width: 100px;
+          height: 40px;
+          color: $white;
+          padding: 0 35px 3px;
           font-size: 1.3rem;
           font-family: 'Lato', sans-serif;
           text-decoration: none;
+          border-right: 1px solid $white;
+
+          &:nth-last-child(2) {
+            border-right: none;
+          }
+
+          &.not-line {
+            border-right: none;
+            display: none;
+          }
 
           &:hover,
           &.is-active {
