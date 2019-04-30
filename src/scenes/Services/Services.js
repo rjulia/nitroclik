@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import { HeaderSection } from "../../Components/index.components";
 import { AppIcon, ServerIcon, GraphicIcon, MegaPhone } from "../../Assets/index.assets";
 import ScrollAnimateInLineSvg from "./components/IconFrame";
@@ -65,7 +67,7 @@ class Services extends Component {
             <div className="row">
               <div className="col-12 order-2 order-md-1 col-md-8 services__list">
                 <h3 className="services__title--text">{localization.services.web.title}</h3>
-                {webArray.map((grafic, idx) => (<span key={idx}>{grafic}</span>))}
+                {webArray.map((web, idx) => (<span key={idx}>{web}</span>))}
                 <p>{localization.services.web.text}</p>
               </div>
               <div className="col-12 order-1 order-md-2 col-md-4">
@@ -86,7 +88,7 @@ class Services extends Component {
               </div>
               <div className="col-12 col-md-8 services__list">
                 <h3 className="services__title--text">{localization.services.marketing.title}</h3>
-                {marketingArray.map((grafic, idx) => (<span key={idx}>{grafic}</span>))}
+                {marketingArray.map((marketing, idx) => (<span key={idx}>{marketing}</span>))}
                 <p>{localization.services.marketing.text}</p>
               </div>
             </div>
@@ -95,7 +97,7 @@ class Services extends Component {
             <div className="row">
               <div className="col-12 order-2 order-md-1 col-md-8 services__list">
                 <h3 className="services__title--text">{localization.services.cloud.title} </h3>
-                {cloudArray.map((grafic, idx) => (<span key={idx}>{grafic}</span>))}
+                {cloudArray.map((cloud, idx) => (<span key={idx}>{cloud}</span>))}
                 <p>{localization.services.cloud.text}</p>
 
               </div>
@@ -112,4 +114,8 @@ class Services extends Component {
   }
 }
 
-export default Services;
+const mapStateToProps = (state) => {
+  return state
+}
+
+export default connect(mapStateToProps)(Services);

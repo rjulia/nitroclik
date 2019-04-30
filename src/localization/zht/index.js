@@ -1,117 +1,131 @@
 const zht = {
-  homes: '首页',
+  homes: '主頁',
   menu: {
-    home: '首页',
-    aboutus: 'about us',
-    services: 'services',
+    home: '主頁',
+    aboutus: '關於我們',
+    services: '服務',
     blog: 'blog',
-    contact: 'contact us'
+    contact: '聯絡我們'
   },
   carousel: {
     one: {
-      altText: 'Innovate',
-      caption: 'Innovate',
-      subtitle: 'An innovate to offer the best for your project'
+      altText: '創新',
+      caption: '創新',
+      subtitle: '我們是一間致力為你締造最好計劃的創新公司'
     },
     two: {
-      altText: 'Create',
-      caption: 'Create',
-      subtitle: 'Together can create what we want'
+      altText: '創造',
+      caption: '創造',
+      subtitle: '我們共同創造我們所想'
     },
     three: {
-      altText: 'Build',
-      caption: 'Build',
-      subtitle: 'we provide for you the best technology in the market'
+      altText: '建立',
+      caption: '建立',
+      subtitle: '我們為你提供市場上最好的科技方案'
     }
   },
   home: {
     whatwe_title: 'what we do',
-    main_title: 'Web, Mobile App and Branding design are our passion',
+    main_title: '我們熱愛網頁、手機應用程式及品牌設計',
     howwedo: 'how we do',
-    planning: 'planning and designing',
-    building: 'building and developing',
-    testing: 'testing and delivery',
-    planning_text: 'We can create your brand, website or app, or redesign if it needs to be enhanced, planning each step together, leaving nothing to chance.',
-    building_text: 'We build the best solutions for you, using both market options, such as Drupal, Shopify or web made to average, everything depends on your needs.',
-    testing_text: 'We like to be a retailer and not leave anything to chance, so we review all aspects of your brand, website or app, so they look as they deserve.',
+    planning: '計劃及設計',
+    building: '建立及發展',
+    testing: '測試及完成',
+    planning_text: '我們可為你創立或重新設計品牌、網頁及應用程式。我們與你一起計劃每一步，實現所有可能性。',
+    building_text: '我們使用Drupal及Shopify的平台，為你提供最佳的網頁方案。我們亦可因應你的需要由零開始建立網頁',
+    testing_text: '我們會於各方面重新審視你的品牌、網頁及應用程式，以確保它們能充分代表你的公司',
     conctact: "how we start",
-    conctact_text: 'Write us a message and we will contact you right away, we will be happy to help you in branding of your company from ideation to visualization',
-    form_name: "Your name *",
-    form_email: "Email *",
-    form_phone: "Phone *",
-    form_subject: "Subject *",
-    form_message: "Message *",
-    form_button: "Submit",
-    form_requiered: "* All fields are required",
-    form_success: 'Thank you for contcting us.',
-    alert_good_title: "GOOD!",
-    alert_good_txt: "The e-mail was sended succesfull",
-    alert_error_title: "HEY!",
-    alert_error_txt: "Something happend in Data Base",
+    conctact_text: '請在此留言，我們會盡快與你聯絡。我們希望由建立以至實踐概念，一步一步為你的公司打造品牌',
+    form_name: "名字 *",
+    form_email: "電郵 *",
+    form_phone: "電話 *",
+    form_subject: "標題 *",
+    form_message: "訊息 *",
+    form_button: "遞交",
+    form_requiered: "* * 必需填寫",
+    form_success: '多謝聯絡我們',
+    alert_good_title: "太好了!",
+    alert_good_txt: "電郵成功送出",
+    alert_error_title: "你好!",
+    alert_error_txt: "數據庫出現問題",
   },
   notFound: {
     title: 'Not found',
     subtitle: 'This page is lost or not exist'
   },
   aboutUs: {
-    title: 'About us',
-    subtitle: "Let's start today to build something pretty awesome",
-    text: "As individual people, we have been in the industry for long and working as independent branding consultants, manager, CTO or entrepreneur in different companies. We come from different  cultures and visions, and now as a team,  we put all our knowledge together to build a company capable of offering the best of design, programming and finishing our results.",
-    about_tl1: 'We are consulting',
-    about_tx1: 'We transform businesses and help our clients outpace digital disruption—by designing new business models and enhancing existing ones.',
-    about_tl2: 'we work end-to-end',
-    about_tx2_a: 'We help clients develop more successful products and propositions',
-    about_tx2_b: 'Using an end-to-end process we call Meaningful Design that brings together the best of Design Thinking, Lean Startup and Agile.',
-    who: 'who we are',
-    button_open: 'Open Bio',
-    button_closed: 'Open Bio',
-    about: "what we are"
+    title: '關於我們',
+    subtitle: "今日就開展令人讚嘆的計劃",
+    text: "我們的團隊集合了品牌顧問、經理、技術長及企業家。我們來自不同公司，不同文化，擁有不同經驗，我們結集各自的專業知識，為客戶提供最好的設計及編寫最適合的程式",
+    about_tl1: '我們提供諮詢服務',
+    about_tx1: '透過設計嶄新或改善現有的經營模式，我們能助客戶成功轉型，應付數位化衝擊',
+    about_tl2: '我們提供一站式服務',
+    about_tx2_a: '我們幫助客戶發展更成功的產品及定位',
+    about_tx2_b: '透過稱為「有意義設計」的一站式服務，設計想法與敏捷、精實創業的思維能為客戶帶來最佳的效果',
+    who: '我們是誰',
+    button_open: '開啟個人檔案',
+    button_closed: '關閉',
+    about: "我們是甚麼"
 
   },
   contact: {
-    title: 'Contact us',
-    subtitle: 'How may i help you today?'
+    title: '聯絡我們',
+    subtitle: '請問我可怎樣幫你?',
+    text: "text Write us a message and we will contact you right away, we will be happy to help you in branding of your company from ideation to visualization"
   },
   services: {
-    title: 'Services',
-    subtitle: "Let's build together",
-    text: 'We offer and designed brands, designs, websites and services to create new and outstanding your brand and to your customers experiences. <br/> Our work is supported by key competencies that combine strategic consulting, creative and technology services enabling us to deliver experience-driven services. <br/> We focus on delivering on our mission to create and development  incredible experiences that bring people and brands together, createing an impact on society and transform day to day with you.',
+    title: '服務',
+    subtitle: "讓我們一起創造",
+    text: '我們透過設計品牌及網頁，令你的顧客有更優質的體驗。<br/> 我們的強項是透過提供策略諮詢及創新科技方案，為客戶帶來以優質體驗為本的服務。<br/> W我們致力創造及發展超凡體驗，拉近品牌與人的關係，給社會和你的生活帶來影響及改變。',
 
     grafhic: {
-      title: 'Branding & Graphic Design',
-      text: 'If you come to us with a business concept we can help you take it from idea to reality. If you think your existing communications material, perhaps your logo design or web design, looks tired or out of date, then we can help to breathe life back into your company’s image.',
-      ser1: 'Brand Consulting',
-      ser2: 'Logo Design',
-      ser3: 'Branding Guideline',
-      ser4: 'Brouchures & Flyers',
-      ser5: 'Catalogue',
+      title: '品牌及平面設計',
+      text: '如你已有發展商機的概念，我們可幫你實踐成真。如你現有的商標或網頁設計沉悶過時，我們可為你公司形象注入生氣。',
+      servicies: {
+        ser1: '品牌諮詢',
+        ser2: '商標設計',
+        ser3: '品牌指南',
+        ser4: '小冊子及傳單',
+        ser5: '商品目錄',
+      }
+
     },
     web: {
-      title: 'Web & App development',
-      text: 'We have over 14 years experience in building web sites and business & consumer applications. We can design a simple WordPress portfolio website or a bespoke fully content managed eCommerce website solution or even a bespoke web application. Our years of experience building and designing websites means we have a range of options at our fingertips and the right people on board to deliver.',
-      ser1: 'Resposive Website',
-      ser2: 'App IOS & Android',
-      ser3: 'Drupal or Custom CMS',
-      ser4: 'E-commerce',
-      ser5: 'Start-up Consulting',
+      title: '網頁及手機應用程式發展',
+      text: '我們擁有為公司及顧客編寫網頁和應用程式的豐富經驗。由簡單的WordPress 公司網頁，至度身訂造的電子商務網頁或應用程式，我們都樂意為你提供服務。我們擁有多年製作網頁的經驗，絕對能為你提供多個方案及委派最合適的人才。網頁推出後我們會竭力找出任何問題。若網頁與當初要求有差異，我們定必跟進，以確保產品質素。',
+      servicies: {
+        ser1: '響應式網頁',
+        ser2: 'IOS & Android 應用程式',
+        ser3: 'Drupal 或度身訂造的內容管理系統 (CMS)',
+        ser4: '電子商務',
+        ser5: '初創企業諮詢',
+      }
+
 
     },
     marketing: {
-      title: 'Digital Marketing',
-      text: 'We work with all our clients to ensure that once their web site has been launched it generates return on investment. As a  Hong Kong web design company once your web site has been launched we will remedy any faults found on the web site where it does not function in accordance with the specifications delivered at the start of the project. We can provide maintenance and hosting contracts. In the unlikely event that your web site develops an issue then we respond quickly.',
-      ser1: 'SEO & SEM',
-      ser2: 'Digital Growth',
-      ser3: 'Social Media Marketing',
-      ser4: 'Mail Campaign',
-      ser5: 'Content Marketing',
+      title: '數碼營銷',
+      text: '我們與你合作，確保網頁推出後能為你帶來可觀回報。我們與你一起分析及訂立營銷策略，透過社交媒體推廣、電郵推廣或數碼增長 (Digital Growth) 等方法走近你的目標客戶。我們一同訂立目標、釐清客路，再擴大數碼接觸點以收集數據，分析客戶行為，從而舉辦最優化的活動。然後重新開始，直至你的公司有可觀增長',
+      servicies: {
+        ser1: '搜尋引擎優化(SEO)及搜尋引擎行銷(SEM)',
+        ser2: '數碼增長',
+        ser3: '社交媒體推廣',
+        ser4: '電郵推廣',
+        ser5: '內容行銷',
+      }
+
     },
     cloud: {
-      title: 'Cloud & SaaS & More',
-      ser1: 'Amazon Web Services',
-      ser2: 'Integrations',
-      ser3: 'Document Management',
-      ser4: 'Business Analisys',
-      ser5: 'Finance Solutions',
+      title: '雲端、軟件即服務 (SaaS) 及更多 ',
+      text: 'Nitroclik為你提供最佳方案，節省開支之餘同時助你提升生意及服務。我們可為你提供數據庫、會計程式、存儲程式及網頁，並可提供維修及網頁寄存的服務，即使網頁出現問題亦能作出即時回應。',
+      servicies: {
+        ser1: '亞馬遜雲端服務 (Amazon Web Services)',
+        ser2: '整合',
+        ser3: '文件管理',
+        ser4: '生意分析',
+        ser5: '財務方案',
+      }
+
     }
   }
 

@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 import {
   Carousel,
@@ -33,30 +34,11 @@ const imagesHomeThree = {
   xlarge: './assets/images/home_three_1280.jpg'
 }
 
-const items = [
-  {
-    images: imagesHomeOne,
-    altText: localization.carousel.one.altText,
-    caption: localization.carousel.one.caption,
-    subtitle: localization.carousel.one.subtitle
-  },
-  {
-    images: imagesHomeThree,
-    altText: localization.carousel.two.altText,
-    caption: localization.carousel.two.caption,
-    subtitle: localization.carousel.two.subtitle
-  },
-  {
-    images: imagesHomeTwo,
-    altText: localization.carousel.three.altText,
-    caption: localization.carousel.three.caption,
-    subtitle: localization.carousel.three.subtitle
-  }
-];
+
 const HeadTitleCarousel = styled(BoxTitle)`
     position: absolute;
     left: 5%;
-    top: 80px;
+    top: 90px;
     @media (min-width: 576px) {
       left: 22%;
       top: 200px;
@@ -99,13 +81,13 @@ class CarouselGroup extends Component {
 
   next() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
+    const nextIndex = this.state.activeIndex === this.items.length - 1 ? 0 : this.state.activeIndex + 1;
     this.setState({ activeIndex: nextIndex });
   }
 
   previous() {
     if (this.animating) return;
-    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
+    const nextIndex = this.state.activeIndex === 0 ? this.items.length - 1 : this.state.activeIndex - 1;
     this.setState({ activeIndex: nextIndex });
   }
 
@@ -113,11 +95,30 @@ class CarouselGroup extends Component {
     if (this.animating) return;
     this.setState({ activeIndex: newIndex });
   }
-
+  items = [
+    {
+      images: imagesHomeOne,
+      altText: localization.carousel.one.altText,
+      caption: localization.carousel.one.caption,
+      subtitle: localization.carousel.one.subtitle
+    },
+    {
+      images: imagesHomeThree,
+      altText: localization.carousel.two.altText,
+      caption: localization.carousel.two.caption,
+      subtitle: localization.carousel.two.subtitle
+    },
+    {
+      images: imagesHomeTwo,
+      altText: localization.carousel.three.altText,
+      caption: localization.carousel.three.caption,
+      subtitle: localization.carousel.three.subtitle
+    }
+  ];
 
   render() {
     const { activeIndex } = this.state;
-    const slides = items.map((item, idx) => {
+    const slides = this.items.map((item, idx) => {
       return (
         <CarouselItem
           onExiting={this.onExiting}
@@ -146,7 +147,7 @@ class CarouselGroup extends Component {
           slide={true}
         >
 
-          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+          <CarouselIndicators items={this.items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
           {slides}
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
           <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
@@ -157,6 +158,9 @@ class CarouselGroup extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  return state
+}
 
+export default connect(mapStateToProps)(CarouselGroup);
 
-export default CarouselGroup;

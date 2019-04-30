@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import './HowWeDo.scss';
 import InViewMonitor from '../../../../Components/InViewMonitor/InViewMonitor';
 import { HeadTitle, ButtonDown } from "../../../../Components/index.components";
@@ -18,19 +20,6 @@ const images = {
   xlarge: './assets/images/how_we_do.jpg'
 }
 
-
-// const ResponsiveImageW100 = styled(ResponsiveImage)`
-//     width: 100vw;
-//     height: 100vh;
-//     width: 100%;
-//     position: absolute;
-//     z-index: -10;
-//     top: 0;
-//     left: 0;
-//     @media (min-width: 576px) {
-//       width: 100%;
-//     }
-// `;
 const scrollToDown = () => {
   const how_height = document.getElementsByClassName('how-we-do')
   zenscroll.toY(how_height[0].offsetHeight * 3, 500)
@@ -44,8 +33,8 @@ const HowWeDo = () => {
         blur={2}
         bgImage={images.medium}
         bgImageAlt="the cat"
-        strength={400}
-      > <div className="container how-we-do__container">
+        strength={400}>
+        <div className="container how-we-do__container">
           <div className="row">
             <div className="col-12 d-flex justify-content-center mb-3 mb-md-5">
               <HeadTitle title={localization.home.howwedo} color={'#FFA59E'} lineColor={'#FFA59E'} />
@@ -100,10 +89,12 @@ const HowWeDo = () => {
         <ButtonDown handleClick={scrollToDown} />
 
       </Parallax>
-      {/* <ResponsiveImageW100 images={images} /> */}
 
     </div>
   );
 };
+const mapStateToProps = (state) => {
+  return state
+}
 
-export default HowWeDo;
+export default connect(mapStateToProps)(HowWeDo);

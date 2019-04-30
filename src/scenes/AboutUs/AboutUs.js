@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import { HeaderSection } from "../../Components/index.components";
 import localization from "../../localization";
 import WhatWeAre from './components/WhatWeAre';
@@ -13,6 +15,12 @@ const images = {
 }
 
 class AboutUs extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
+  }
   render() {
     return (
       <div className="sections row">
@@ -36,5 +44,9 @@ class AboutUs extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  return state
 
-export default AboutUs;
+}
+
+export default connect(mapStateToProps)(AboutUs);

@@ -12,7 +12,7 @@ import _ from "lodash";
 const IconMenu = styled(Menu)`
     svg{
       fill: #fff;
-      width: 2.5rem;
+      width: 2.2rem;
     }  
 `;
 

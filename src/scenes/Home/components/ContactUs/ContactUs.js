@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import './ContactUs.scss';
 import { HeadTitle, ContactForm } from "../../../../Components/index.components";
 import _ from "lodash";
@@ -31,5 +32,8 @@ const ContactUs = () => {
     </div>
   );
 };
+const mapStateToProps = (state) => {
+  return state
+}
 
-export default ContactUs;
+export default connect(mapStateToProps)(ContactUs);

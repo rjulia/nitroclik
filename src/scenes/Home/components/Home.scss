@@ -6,17 +6,16 @@
   }
 
   .home__main--title {
-    padding-top: 20px;
     position: absolute;
     display: flex;
     text-align: center;
     justify-content: center;
     width: 100vw;
-    padding: 30px 5px;
+    padding: 20px 20px 30px;
 
     h1 {
       font-family: $outstanding;
-      font-size: 20px;
+      font-size: 18px;
       width: auto;
     }
   }

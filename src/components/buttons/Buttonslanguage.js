@@ -8,7 +8,7 @@ class Buttonslanguage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      languageButtonText: '繁'
+      languageButtonText: localStorage.getItem('language') === "zht" ? "ENG" : "繁"
     }
   }
 

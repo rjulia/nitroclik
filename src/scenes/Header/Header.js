@@ -8,14 +8,15 @@ import { withRouter } from "react-router-dom";
 
 
 const MainMenuHeaderMobile = styled(MainMenuMobile)`
-    width: 48px;
-    height: 48px
-    top: 10px;
+    width: 40px;
+    height: 40px
+    top: 20px;
     position: absolute;
     right: 20px;
     display: inline-block;
     border: none;
     margin: 0;
+    padding: 0px;
     text-decoration: none;
     background-color: transparent;
     color: transparent:

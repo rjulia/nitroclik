@@ -27,7 +27,7 @@
     left: 0;
     position: relative;
     width: 100%;
-    margin: 0 20px;
+    margin: 0;
     height: $heightHeaderMobile + px;
 
     p {
@@ -38,6 +38,7 @@
 
     @media (min-width: 576px) {
       height: $heightHeaderDesktop + px;
+      margin: 0 20px;
     }
 
     &__menu--desktop {
@@ -78,7 +79,7 @@
 
           &.not-line {
             border-right: none;
-            display: none;
+            cursor: pointer;
           }
 
           &:hover,
@@ -94,14 +95,16 @@
 }
 
 .logo {
-  width: 55%;
-  top: 10px;
+  width: 50%;
+  top: 20px;
   position: absolute;
-  left: 10px;
+  left: 20px;
 
   @media (min-width: 576px) {
     width: 18%;
     max-width: 300px;
+    top: 10px;
+    left: 10px;
   }
 
   .logo__line--one {
@@ -111,7 +114,7 @@
   .logo__line--two {
     fill: none;
     stroke: $white;
-    stroke-width: 6;
+    stroke-width: 4;
     stroke-miterlimit: 10;
   }
 
@@ -172,7 +175,7 @@
     text-align: center;
     margin: 10px auto;
     padding: 0;
-    width: 50%;
+    width: 65%;
 
     .menu__list--item {
       padding: 10px 0;

@@ -59,13 +59,13 @@
       </mj-column>
       <mj-column width="50%">
 
-        <mj-image href="http://nitroclik.com/services" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/sunset2.jpg?alt=media&token=534b8dd9-3fa6-4550-8e10-d15f5731ff7a" alt="Racoon logo" align="center" padding="0px"></mj-image>
+        <mj-image href="http://nitroclik.com/services" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/sunset2.jpg?alt=media&token=0f4f8cee-8fcb-45df-a5d5-db49e244ae28" alt="Racoon logo" align="center" padding="0px"></mj-image>
       </mj-column>
       <mj-column width="50%">
         <mj-image href="http://nitroclik.com" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/contact2.jpg?alt=media&token=019fe622-7d8e-49c9-88e2-0492c257e87d" alt="Racoon logo" align="center" padding="0px"></mj-image>
       </mj-column>
       <mj-column width="50%" css-class="back-white">
-        <mj-image width="60px" height="60px" padding="40px 25px" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/n.png?alt=media&token=c2b56822-e29f-4bc6-80d3-dadab9fbfa56" />
+        <mj-image width="60px" height="60px" padding="40px 25px" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/contact.jpg?alt=media&token=3e877180-45e1-423f-bc39-7fed3fb0a0c3" />
         <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" padding="0 20px" />
         <mj-text align="center" padding="20px">
 

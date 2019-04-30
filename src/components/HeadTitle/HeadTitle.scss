@@ -12,14 +12,14 @@
   .d-flex & {
     height: 45px;
     position: relative;
+  }
 
-    @media (min-width: 576px) {
-      height: 67px;
-    }
-
+  .d-flex .carousel & {
+    border: 3px solid $white;
   }
 
   .headTitle__text {
+    margin: 0;
     font-size: 2rem;
     font-family: $outstanding;
     text-transform: uppercase;
@@ -27,9 +27,22 @@
     line-height: 1;
     color: $white;
 
-    @media (min-width: 576px) {
-      font-size: 3.5rem;
+    .d-flex .carousel & {
+      font-size: 2.4rem;
+    }
+  }
 
+  @media (min-width: 576px) {
+    .headTitle__text {
+      font-size: 3.5rem;
+    }
+
+    .d-flex & {
+      height: 67px;
+    }
+
+    .d-flex .carousel & {
+      border: 5px solid $white;
     }
   }
 }

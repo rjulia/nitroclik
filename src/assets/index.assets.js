@@ -10,6 +10,9 @@ export { default as SoftwareIcon } from './Icons/Software';
 export { default as CloudIcon } from './Icons/Cloud';
 export { default as GraphicIcon } from './Icons/Graphic';
 export { default as MegaPhone } from './Icons/Megaphone';
+export { default as TwitterIcon } from './Icons/TwiterIcon';
+
+
 
 
 

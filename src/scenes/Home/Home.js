@@ -5,7 +5,6 @@ import InViewMonitor from '../../Components/InViewMonitor/InViewMonitor'
 import { Parallax } from 'react-parallax';
 import './components/Home.scss'
 import localization from "../../localization";
-import _ from "lodash";
 
 // imagesHome
 
@@ -25,7 +24,7 @@ const Home = (props) => {
         >
           <div className="container d-flex justify-content-center">
             <div className="home__main--title">
-              <h1> {_.toUpper(localization.home.main_title)} </h1>
+              <h1> {localization.home.main_title} </h1>
             </div>
             <InViewMonitor
               classNameNotInView='vis-hidden'
