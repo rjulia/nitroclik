@@ -16,10 +16,22 @@
     background-color: rgba($color: #000000, $alpha: 0.5)
   }
 
+  .btn-language__mobile {
+    display: inline;
+    position: absolute;
+    top: 21px;
+    right: 76px;
+    font-size: 24px;
+  }
+
   @media (min-width: 576px) {
     overflow: hidden;
     height: $heightHeaderDesktop + px;
     width: 100%;
+
+    .btn-language__mobile {
+      display: none;
+    }
   }
 
   .header {

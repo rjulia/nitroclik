@@ -23,7 +23,7 @@ class Profile extends Component {
       <Fragment>
         <div className="col-12 col-md-3 profile">
           <div className="row">
-            <div className="col-md-12 profile__img">
+            <div className="col-md-12 profile__img hidden__img">
               <div className="frame">
                 <img scrolling="no" src={picture} alt={name} />
               </div>
@@ -38,7 +38,7 @@ class Profile extends Component {
         <Modal show={this.state.show} handleClose={this.hideModal}>
           <NameTitle params={name} />
           <p className="bio_subtitle">{position}</p>
-          <p className="bio_txt">{bio}</p>
+          <p className="bio_txt" dangerouslySetInnerHTML={{ __html: bio }}></p>
         </Modal>
       </Fragment>
     )

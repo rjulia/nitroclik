@@ -1,5 +1,6 @@
 const en = {
   homes: "home",
+  readMore: "Read more",
   menu: {
     home: 'home',
     aboutus: 'about us',
@@ -11,7 +12,7 @@ const en = {
     one: {
       altText: 'Innovate',
       caption: 'Innovate',
-      subtitle: 'An innovate to offer the best for your project'
+      subtitle: 'An innovation that offer the best for your project'
     },
     two: {
       altText: 'Create',

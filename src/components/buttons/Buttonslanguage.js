@@ -36,7 +36,7 @@ class Buttonslanguage extends Component {
   render() {
     return (
 
-      <p className="menu__list--item not-line" onClick={this.onLanguageButtonPress}> {this.state.languageButtonText}</p>
+      <p className="menu__list--item not-line button_language" onClick={this.onLanguageButtonPress}> {this.state.languageButtonText}</p>
 
     )
   }

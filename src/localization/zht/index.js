@@ -1,5 +1,6 @@
 const zht = {
   homes: '主頁',
+  readMore: "閱讀更多",
   menu: {
     home: '主頁',
     aboutus: '關於我們',
@@ -25,16 +26,16 @@ const zht = {
     }
   },
   home: {
-    whatwe_title: 'what we do',
+    whatwe_title: '我們做甚麼',
     main_title: '我們熱愛網頁、手機應用程式及品牌設計',
-    howwedo: 'how we do',
+    howwedo: '我們如何做',
     planning: '計劃及設計',
     building: '建立及發展',
     testing: '測試及完成',
     planning_text: '我們可為你創立或重新設計品牌、網頁及應用程式。我們與你一起計劃每一步，實現所有可能性。',
     building_text: '我們使用Drupal及Shopify的平台，為你提供最佳的網頁方案。我們亦可因應你的需要由零開始建立網頁',
     testing_text: '我們會於各方面重新審視你的品牌、網頁及應用程式，以確保它們能充分代表你的公司',
-    conctact: "how we start",
+    conctact: "我們怎樣開始",
     conctact_text: '請在此留言，我們會盡快與你聯絡。我們希望由建立以至實踐概念，一步一步為你的公司打造品牌',
     form_name: "名字 *",
     form_email: "電郵 *",
@@ -50,8 +51,8 @@ const zht = {
     alert_error_txt: "數據庫出現問題",
   },
   notFound: {
-    title: 'Not found',
-    subtitle: 'This page is lost or not exist'
+    title: '找不到網頁',
+    subtitle: '此網頁不存在'
   },
   aboutUs: {
     title: '關於我們',
@@ -71,7 +72,7 @@ const zht = {
   contact: {
     title: '聯絡我們',
     subtitle: '請問我可怎樣幫你?',
-    text: "text Write us a message and we will contact you right away, we will be happy to help you in branding of your company from ideation to visualization"
+    text: "請在此留言，我們會盡快與你聯絡。我們希望由建立以至實踐概念，一步一步為你的公司打造品牌"
   },
   services: {
     title: '服務',

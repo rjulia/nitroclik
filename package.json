@@ -34,8 +34,9 @@
     "zenscroll": "^4.0.2"
   },
   "scripts": {
+    "gulp": "gulp",
     "start": "react-scripts start",
-    "build": "react-scripts build brunch build -p",
+    "build": "react-scripts build && npm run gulp -- copy",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "mjml": "mjml EDMs/**.mjml -o EDMs/dist/"
@@ -50,6 +51,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gulp": "^4.0.1",
     "uglify-js-brunch": "^2.10.0"
   }
 }

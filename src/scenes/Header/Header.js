@@ -5,6 +5,7 @@ import MainMenuMobile from "./components/MainMenuMobile";
 import MainMenuDesktop from "./components/MainMenuDesktop";
 import styled from 'styled-components';
 import { withRouter } from "react-router-dom";
+import { ButtonLanguage } from '../../Components/index.components';
 
 
 const MainMenuHeaderMobile = styled(MainMenuMobile)`
@@ -74,6 +75,9 @@ class Header extends Component {
       <div className={`container__header d-flex justify-content-center row ${this.state.classAdd} ${this.state.classUrl}`} >
         <div className="header">
           <Logo />
+          <div className="btn-language__mobile">
+            <ButtonLanguage />
+          </div>
           <MainMenuHeaderMobile {...this.props} />
           <MainMenuDesktop />
         </div>

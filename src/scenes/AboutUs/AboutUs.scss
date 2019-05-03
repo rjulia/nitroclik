@@ -46,8 +46,12 @@
     width: 100%;
     margin: 0 auto;
     height: 100px;
-    text-align: center;
-    overflow-y: hidden;
+
+    &.hidden__img {
+      text-align: center;
+      overflow-y: hidden;
+
+    }
   }
 
   .about-us__img--img {
@@ -80,11 +84,14 @@
     .about-us__img {
       height: auto;
 
+      &.hidden {
+        .about-us__img--img {
+          width: 120%;
+        }
+
+      }
     }
 
-    .about-us__img--img {
-      width: 120%;
-    }
 
     .about-us__txt {
       padding: 20px;

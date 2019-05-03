@@ -20,14 +20,12 @@ class WhatWeDo extends Component {
 
     this.state = {
       text: props.text,
-      icon: props.icon
+      icon: props.icon,
     }
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.text !== this.props.text) {
-      //Perform some operation
-      console.log(nextProps)
       this.setState({ text: nextProps.text });
     }
   }
@@ -95,7 +93,7 @@ class WhatWeDo extends Component {
           </div>
           <div className="col-12 d-flex justify-content-center">
             <NavLink to="/services" className="d-flex justify-content-center">
-              <Button text="Read more" />
+              <Button text={localization.readMore} />
             </NavLink>
           </div>
         </div>
