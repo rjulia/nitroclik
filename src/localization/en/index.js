@@ -34,7 +34,7 @@ const en = {
     testing: 'testing and delivery',
     planning_text: 'We can create your brand, website or app, or redesign if it needs to be enhanced. Planning each step of the way together and leaving nothing to chance.',
     building_text: 'We build the best solutions for you,by using existing Web platforms; Drupal, Shopify. As well as developing the website from scratch. All this depends on your need.',
-    testing_text: 'We like to be a retailer and not leave anything to chance, so we will review all aspects of your brand, website, or app, so they look well represented.',
+    testing_text: 'We like to be a retailer and not leave anything to chance, so we will review all aspects of your brand, website, or app, so it can be well presented',
     conctact: "how we start",
     conctact_text: 'Write us a message and we will contact you right away. we are  happy to help you in branding of your company from idea to visualization',
     form_name: "Your name *",
@@ -57,7 +57,7 @@ const en = {
   aboutUs: {
     title: 'About us',
     subtitle: "Let's start today to build something pretty awesome",
-    text: "As individuals, we have been in the industry for a longtime, and worked as independent branding consultants, manager, CTO or entrepreneur in different companies. We came from different  cultures and visions, and now as a team  we put all our knowledge together to build a company capable of offering the best of design, programming.",
+    text: "As individuals, we have been in the industry for a longtime, and worked as independent branding consultants, manager, CTO or entrepreneur in different companies. We came from different  cultures and background, and now as a team  we put all our knowledge together to build a company capable of offering the best of design and programming.",
     about_tl1: 'We are consulting',
     about_tx1: 'We transform businesses and help our clients outpace digital disruption—by designing new business models and enhancing existing ones',
     about_tl2: 'we work end-to-end',
@@ -77,11 +77,11 @@ const en = {
   services: {
     title: 'Services',
     subtitle: "Let's build together",
-    text: 'We offer and designs brands, websites and services to create new and outstanding products to enhance your customers experience. <br/> Our work is supported by key competencies that combine strategic consulting, creative and technology services enabling us to deliver experience-driven services. <br/> We focus on delivering our mission to create and development  incredible experiences that bring people and brands together, creating an impact on society and transform day to day with you.',
+    text: 'We offer and designs brands, websites and services to create new and outstanding products to enhance your customers experience. <br/> Our work is supported by key competencies that combine strategic consulting, creative and technology services enabling us to deliver experience-driven services. <br/> We focus on delivering our mission to create and development incredible experiences that bring people and brands together, creating an impact on society and transform day to day with you.',
 
     grafhic: {
       title: 'Branding & Graphic Design',
-      text: 'If you come to us with a business concept we can help you take it from idea to reality. If you think your existing communications material, perhaps your logo design or web design,looks tired or out of date, then we can help to breathe life back into your company’s image.',
+      text: 'If you come to us with a business concept we can help you take it from idea to reality. If you think your existing communications material, perhaps your logo design or web design  out of date, then we can help to breath life back into your company’s image.',
       servicies: {
         ser1: 'Brand Consulting',
         ser2: 'Logo Design',
@@ -104,7 +104,7 @@ const en = {
     },
     marketing: {
       title: 'Digital Marketing',
-      text: 'We can study together how make you Marketing more closest to your target customers, using Social Media Marketing or e-Mail campaign, and with Digital Growth, first we will define your objectives, clarify your audience, which multiples digital touch point are using, collecting this data, analyzing customer behavior and finally running and optimizing campaign, and start again until your company has a better growth.',
+      text: "Together we can target your customers, using Social Media, email campaign and Digital Growth. First, we will define your objectives and clarify your audience. Through multiple digital touch point, we are collecting this data and analyzing the customer's behaviour and finally running and optimising campaign and restart until your company has better grown.",
       servicies: {
         ser1: 'SEO & SEM',
         ser2: 'Digital Growth',

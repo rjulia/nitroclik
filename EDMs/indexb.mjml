@@ -1,0 +1,70 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700"></mj-font>
+    <mj-style>
+      @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+      .text {
+        font-family: Raleway, line-height: 0px
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#d6dde5">
+    <mj-section background-color="#ffa59e" padding-bottom="20px" padding-top="20px">
+      <mj-column width="100%" vertical-align="top">
+        <mj-image href="http://nitroclik.com" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/logo.png?alt=media&token=c2497453-dfd2-4ed1-bc6b-91aab0b5b328" alt="Amario logo" align="center" border="none" width="182px" padding-left="0px" padding-right="0px" padding-bottom="0px" padding-top="0"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-hero mode="fixed-height" height="299px" background-width="100%" background-height="299px" background-url="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/seek_a_brandb_01.gif?alt=media&token=eda94c47-a4cc-4a49-9dfd-a299a9dc3f68" background-color="#2a3448" padding="10px 0px 200px">
+      <mj-text padding="20px" line-height="25px" color="#000000" align="right" font-size="28px" line-height="45px" font-weight="700" font-family="Raleway, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif">
+        <p class="text" font-weight="700"> Do you feel sometimes</p>
+        <p class="text" font-weight="700"> your company looks like this in internet</p>
+      </mj-text>
+
+    </mj-hero>
+    <mj-section background-color="#ffffff" padding-bottom="1px" padding-top="1px">
+
+    </mj-section>
+    <mj-section background-color="#ffffff" padding-bottom="20px" padding-top="20px">
+      <mj-hero mode="fixed-height" height="368px" background-width="100%" background-height="368px" background-url="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/seek_a_brandb_03.jpg?alt=media&token=7069ee6e-377f-4b5e-bc1c-bf9cf86afc84" background-color="#2a3448">
+        <mj-text font-family="Raleway, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding="5px 20px 0px" line-height="25px" color="#000000" align="right" font-size="28px" line-height="45px" font-weight="700">
+          <p class="text" font-weight="700"> We can do it looks like this</p>
+
+        </mj-text>
+
+      </mj-hero>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding-bottom="20px" padding-top="20px">
+      <mj-column width="50%" vertical-align="top">
+        <mj-image src="http://191n.mj.am/img/191n/3s/xmj.jpg" alt="Sailing" align="center" border="none" width="250px" padding-left="25px" padding-right="25px" padding-bottom="10px" padding-top="10"></mj-image>
+      </mj-column>
+      <mj-column width="50%" vertical-align="top">
+        <mj-text align="center" color="#000000" font-family="Raleway, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" font-size="13px" padding-left="25px" padding-right="25px" padding-bottom="10px" padding-top="10">
+          <p><span style="color: rgb(59, 70, 82);"><span style="font-size: 15px;"><span style="font-weight: bold;">Click above and...</span></span>
+            </span>
+          </p>
+        </mj-text>
+        <mj-button background-color="#ffa59e" color="#FFFFFF" font-size="15px" align="center" vertical-align="middle" border="none" padding="15px 30px" border-radius="3px" href="http://www.nitroclik.com" font-family="Raleway, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px" padding-bottom="10px" padding-top="10">
+          Let's do it
+
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffa59e" padding-bottom="0px" padding-top="0">
+      <mj-column width="33.33333333333333%" vertical-align="top">
+        <mj-image href="http://www.nitroclik.com" src="https://firebasestorage.googleapis.com/v0/b/nitroclik-blog.appspot.com/o/n.png?alt=media&token=c2b56822-e29f-4bc6-80d3-dadab9fbfa56" alt="Amario logo" align="center" border="none" width="50px" padding-left="25px" padding-right="25px" padding-bottom="10px" padding-top="10"></mj-image>
+      </mj-column>
+      <mj-column width="33.33333333333333%" vertical-align="top">
+
+      </mj-column>
+      <mj-column width="33.33333333333333%" vertical-align="top">
+        <mj-social padding-top="20px">
+          <mj-social-element name="instagram" href="[https://www.instagram.com/nitroclik"> </mj-social-element>
+          <mj-social-element name="twitter" href="https://twitter.com/nitroclik"> </mj-social-element>
+          <mj-social-element name="linkedin" href="https://www.linkedin.com/company/nitroclik/"> </mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
