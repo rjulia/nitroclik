@@ -1,9 +1,16 @@
 @import '../../Scss/variables.scss';
+
 .card-blog {
 
   .btn {
-      background-color: $mainColor;
-      border-radius: 0;
+    background-color: $mainColor;
+    border-radius: 0;
+    font-family: $outstanding;
+
+    &:hover {
+      background-color: $hoverManiColor;
+    }
+
   }
 
 }

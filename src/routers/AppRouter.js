@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserHistory } from 'history';
 import ScrollToTop from './scroolToTop'
 import { Router, Route, Switch } from 'react-router';
-import { Header, Home, Footer, AboutUs, Services, Blog, BlogDetail, ContactUS, NotFound } from "../Scenes/index.scenes";
+import { Header, Home, Footer, AboutUs, Services, Blog, BlogDetail, ContactUS, NotFound, Porfolio } from "../Scenes/index.scenes";
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-20771746-1');
@@ -23,6 +23,7 @@ const AppRouter = () => (
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/porfolio" component={Porfolio} />
           <Route path="/aboutus" component={AboutUs} />
           <Route path="/services" component={Services} />
           <Route path="/blog/:Id" component={BlogDetail} />

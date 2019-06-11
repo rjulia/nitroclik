@@ -10,6 +10,8 @@ export { default as Modal } from './Modal/Modal';
 export { default as Button } from './Buttons/Button';
 export { default as NameTitle } from './HeadTitle/NameTitle';
 export { default as ButtonLanguage } from './Buttons/Buttonslanguage';
+export { default as OwnLightbox } from './Lightbox/OwnLightbox';
+
 
 
 

@@ -9,6 +9,8 @@ export { default as Blog } from './Blog/HomeBlog/HomeBlog';
 export { default as BlogDetail } from './Blog/DetailBlog/DetailBlog';
 export { default as ContactUS } from './ContacUs/ContacUs';
 export { default as NotFound } from './NotFound/NotFount';
+export { default as Porfolio } from './Porfolio/Porfolio';
+
 
 
 

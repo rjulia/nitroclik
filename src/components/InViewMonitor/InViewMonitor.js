@@ -148,7 +148,9 @@ class InviewMonitor extends Component {
   }
   render() {
     const { childProps, className } = this.state
-    let { useInviewMonitor, children } = this.props
+    //let { useInviewMonitor, children } = this.props
+
+    let { children } = this.props
     if (childProps && Object.keys(childProps).length) {
       children = React.cloneElement(children, childProps)
     }

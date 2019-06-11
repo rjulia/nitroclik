@@ -20,6 +20,9 @@ class MainMenuDesktop extends Component {
           <NavLink to="/" className="menu__list--item">
             {_.toUpper(localization.getString('homes'))}
           </NavLink>
+          <NavLink activeClassName='is-active' className="menu__list--item" to="/porfolio">
+            {_.toUpper(localization.menu.porfolio)}
+          </NavLink>
           <NavLink activeClassName='is-active' className="menu__list--item" to="/aboutus">
             {_.toUpper(localization.menu.aboutus)}
           </NavLink>
