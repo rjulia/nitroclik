@@ -7,7 +7,6 @@ export default ({
   favourites,
   addFavourite
 }) => {
-  console.log(favourites)
   const names = data
     .map((person, i) => {
       // only display names that match current input string

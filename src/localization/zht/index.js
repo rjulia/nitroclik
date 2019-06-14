@@ -7,7 +7,7 @@ const zht = {
     services: '服務',
     blog: 'blog',
     contact: '聯絡我們',
-    porfolio: "porfolio"
+    porfolio: "作品展示"
   },
   carousel: {
     one: {
@@ -76,8 +76,10 @@ const zht = {
     text: "請在此留言，我們會盡快與你聯絡。我們希望由建立以至實踐概念，一步一步為你的公司打造品牌"
   },
   porfolio: {
-    title: 'Porfolio',
+    title: '作品展示',
     subtitle: "I have to thing",
+    link: "連結",
+    info: "+資料"
   },
   services: {
     title: '服務',

@@ -77,7 +77,9 @@ const en = {
   },
   porfolio: {
     title: 'Porfolio',
-    subtitle: "I have to thing",
+    subtitle: "Our best job is get the confident from our clients",
+    link: "link",
+    info: "+info"
   },
   services: {
     title: 'Services',

@@ -8,22 +8,27 @@
     display: flex;
     justify-content: center;
 
+    .col-4 {
+      display: flex;
+    }
 
   }
 
   .porfolio___card {
     padding: 0px;
     margin: 15px 0;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 0 0 5px 0 rgba($color: $black, $alpha: 0.2);
 
     .porfolio__image--container {
-      min-height: 180px;
+      height: 230px;
 
       img {
         width: 100%;
-        height: 150%;
+        height: 100%;
       }
     }
 
@@ -35,27 +40,34 @@
         font-size: 28px;
         color: $mainColor;
         font-weight: 700;
+        text-transform: uppercase
       }
 
       .porfolio__text--subtitle {
         font-family: $general;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 700;
         width: auto;
         display: inline-block;
-        padding: 5px;
-        color: $white;
+        padding: 2px 10px;
+        color: $black;
         text-transform: uppercase;
+        position: relative;
+        margin-right: 5px;
 
         &.web {
           background-color: $web;
         }
 
-        &.photo {
+        &.app {
+          background-color: $app;
+        }
+
+        &.photography {
           background-color: $photo
         }
 
-        &.grafhic {
+        &.graphic {
           background-color: $grafhic
         }
 
@@ -70,12 +82,17 @@
 
       p {
         font-family: $general;
+        font-size: 18px;
+        text-transform: unset;
       }
 
       .btn {
         background-color: $mainColor;
-        border-radius: 0;
-        margin: 5px 0;
+        border-radius: 5px;
+        height: 40px;
+        margin: 0 10px 0 0;
+        color: $white;
+        font-weight: 700;
 
         a {
           color: $white;

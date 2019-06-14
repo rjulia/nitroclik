@@ -8,7 +8,7 @@ import Profile from "./Profile"
 const WhoWeAre = () => {
 
   const list = _.sampleSize(staff, staff.length)
-  console.log(list)
+
   return (
     <Fragment>
       <div className="col-12 mt-5 d-flex justify-content-center mb-3 mb-md-5">

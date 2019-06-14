@@ -2,17 +2,11 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { reducer } from '../Services/Reducers/index';
+import { reduxFirestore, getFirestore } from 'redux-firestore';
+import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
+import fbConfig from "../Services/Firebase/Firebase";
 
 
-const middleware = [thunk];
-
-//const storageState = localStorage.getItem('citas') ? JSON.parse(localStorage.getItem('citas')) : [];
-
-// storageState para localstorage, de otra forma initialState.
-// const store = createStore(reducer, 
-//     compose(applyMiddleware(...middleware), 
-//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-// ) );
 
 const composeEnhancers =
   typeof window === 'object' &&
@@ -22,8 +16,10 @@ const composeEnhancers =
     }) : compose;
 
 const enhancer = composeEnhancers(
-  applyMiddleware(...middleware),
+  applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
   // other store enhancers if any
+  reactReduxFirebase(fbConfig), // redux binding for firebase
+  reduxFirestore(fbConfig) // redux bindings for firestore
 );
 const store = createStore(reducer, enhancer);
 
