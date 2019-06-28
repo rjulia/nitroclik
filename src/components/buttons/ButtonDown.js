@@ -4,7 +4,7 @@ import './Buttons.scss'
 const BoxTitle = (props) => {
   return (
     <div className="item">
-      <div className="mouse" onClick={props.handleClick}></div>
+      <p className="mouse" onClick={props.handleClick}></p>
     </div>
   );
 };

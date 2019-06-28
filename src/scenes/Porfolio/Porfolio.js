@@ -50,26 +50,29 @@ class Porfolio extends Component {
 
             {this.props.works && this.props.works.map(item => (
 
-              <div key={item.id} className="col-4">
+              <div key={item.id} className="porfolio___column col-12 col-md-6 col-lg-4">
                 <div className="porfolio___card">
                   <div className="porfolio__image--container">
                     <img src={item.head} alt="" />
                   </div>
                   <div className="porfolio__text--contanier">
-                    {item.category && item.category.map(category => (
+                    <div className="porfolio__tags">
+                      {item.category && item.category.map(category => (
 
-                      <p key={category} className={`porfolio__text--subtitle ${category}`}>{category}</p>
-                    ))}
+                        <p key={category} className={`porfolio__text--subtitle ${category}`}>{category}</p>
+                      ))}
+                    </div>
                     <h2>{item.client}</h2>
                     <p>{item.description}</p>
+                    <div className="porfolio__buttons">
+                      {(item.url && item.url.length) ? <button className="btn"><a href={item.url} target="_blank" rel="noopener noreferrer">{localization.porfolio.link}</a></button> : ''}
 
-                    {(item.url && item.url.length) ? <button className="btn"><a href={item.url} target="_blank" rel="noopener noreferrer">{localization.porfolio.link}</a></button> : ''}
-
-                    {
-                      (item.images && item.images.length > 0) ?
-                        <button onClick={() => { this.toggleLightbox(item.id) }} className="btn">{localization.porfolio.info}</button>
-                        : ''
-                    }
+                      {
+                        (item.images && item.images.length > 0) ?
+                          <button onClick={() => { this.toggleLightbox(item.id) }} className="btn">{localization.porfolio.info}</button>
+                          : ''
+                      }
+                    </div>
                     {(item.id === this.state.id) ?
                       <OwnLightbox
                         images={item.images}

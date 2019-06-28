@@ -1,3 +1,7 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?nitroclik\.com
+RewriteRule ^(.*)$ https://www.nitroclik.com/$1 [R,L]
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
  RewriteCond %{REQUEST_FILENAME} !-f

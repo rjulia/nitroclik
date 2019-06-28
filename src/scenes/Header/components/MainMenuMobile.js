@@ -36,9 +36,9 @@ const MainMenuMobile = (props) => {
         <LogoN />
         <ul className="menu__list">
           <li className="menu__list--item" onClick={toOpen}><Link to="/"> {_.toUpper(localization.menu.home)}</Link></li>
+          <li className="menu__list--item" onClick={toOpen}><Link to="/porfolio">{_.toUpper(localization.menu.porfolio)}</Link></li>
           <li className="menu__list--item" onClick={toOpen}><Link to="/aboutus"> {_.toUpper(localization.menu.aboutus)}</Link></li>
           <li className="menu__list--item" onClick={toOpen}><Link to="/services"> {_.toUpper(localization.menu.services)}</Link></li>
-          {/* <li className="menu__list--item" onClick={toOpen}><Link to="/blog">{_.toUpper(localization.menu.blog)}</Link></li> */}
           <li className="menu__list--item" onClick={toOpen}><Link to="/contactus"> {_.toUpper(localization.menu.contact)}</Link></li>
         </ul>
       </div>

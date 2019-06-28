@@ -77,7 +77,7 @@ const zht = {
   },
   porfolio: {
     title: '作品展示',
-    subtitle: "I have to thing",
+    subtitle: "我們公司致力取得客戶信心，協助他們建立信心",
     link: "連結",
     info: "+資料"
   },

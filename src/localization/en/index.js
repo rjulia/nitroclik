@@ -77,7 +77,7 @@ const en = {
   },
   porfolio: {
     title: 'Porfolio',
-    subtitle: "Our best job is get the confident from our clients",
+    subtitle: "our best job is to get the trust from our clients, and help them build confidence.",
     link: "link",
     info: "+info"
   },

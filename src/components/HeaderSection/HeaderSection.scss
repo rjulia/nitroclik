@@ -6,6 +6,7 @@
   width: 100%;
   display: block;
   position: relative;
+
   .header-section__title {
     width: 100%;
     height: 100vh;
@@ -14,6 +15,7 @@
     justify-content: center;
     flex-direction: column;
     color: $white;
+
     h1 {
       background-color: rgba($white, 0.9);
       padding: 8px 15px;
@@ -21,7 +23,7 @@
       font-weight: 300;
       margin-top: 20px;
       text-transform: uppercase;
-      color:$mainColor
+      color: $mainColor
     }
   }
 }
@@ -30,8 +32,14 @@
 @media (min-width: 576px) {
   .header-section__container {
     height: 500px;
+
     .header-section__title {
       height: auto;
+
+      h1 {
+        max-width: 80%;
+        text-align: center;
+      }
     }
   }
 }
@@ -39,8 +47,9 @@
 @media (min-width: 1200px) {
   .header-section__container {
     height: 700px;
+
     .header-section__title {
       height: 700px;
     }
-  } 
+  }
 }
