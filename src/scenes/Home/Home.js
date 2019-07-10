@@ -13,6 +13,9 @@ const Home = (props) => {
   return (
     <div className="home d-flex row flex-column">
       <HeroImage />
+      {/* <div className="home__main--title">
+        <h1> {localization.home.main_title} </h1>
+      </div> */}
       <div className="col-12 p-0">
         <Parallax
           blur={10}
@@ -23,9 +26,6 @@ const Home = (props) => {
 
         >
           <div className="container d-flex justify-content-center">
-            <div className="home__main--title">
-              <h1> {localization.home.main_title} </h1>
-            </div>
             <InViewMonitor
               classNameNotInView='vis-hidden'
               classNameInView='animated fadeInUp'>

@@ -70,7 +70,7 @@ class CarouselGroup extends Component {
     this.onExited = this.onExited.bind(this);
     this.ITEMS = this.getItems();
   }
-  getItems(){
+  getItems() {
     let items = [
       {
         images: imagesHomeOne,
@@ -93,8 +93,8 @@ class CarouselGroup extends Component {
     ];
     return items
   }
-  
-  componentWillReceiveProps(nextProps) { 
+
+  componentWillReceiveProps(nextProps) {
     this.ITEMS = this.getItems();
   }
 
@@ -122,7 +122,7 @@ class CarouselGroup extends Component {
     if (this.animating) return;
     this.setState({ activeIndex: newIndex });
   }
-  
+
 
   render() {
     const { activeIndex } = this.state;
@@ -151,7 +151,7 @@ class CarouselGroup extends Component {
           previous={this.previous}
           keyboard={false}
           ride="carousel"
-          interval={this.state.playing ? 7000 : false}
+          interval={this.state.playing ? 10000 : false}
           slide={true}
         >
 

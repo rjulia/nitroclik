@@ -7,7 +7,7 @@ const en = {
     services: 'services',
     blog: 'blog',
     contact: 'contact us',
-    porfolio: "porfolio"
+    porfolio: "portfolio"
   },
   carousel: {
     one: {
@@ -76,7 +76,7 @@ const en = {
     text: "text Write us a message and we will contact you right away, we will be happy to help you in branding of your company from ideation to visualization"
   },
   porfolio: {
-    title: 'Porfolio',
+    title: 'Portfolio',
     subtitle: "our best job is to get the trust from our clients, and help them build confidence.",
     link: "link",
     info: "+info"

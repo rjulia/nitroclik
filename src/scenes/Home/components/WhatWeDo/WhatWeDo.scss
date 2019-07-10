@@ -4,10 +4,11 @@
   height: 100vh * 2.2;
   margin-bottom: 50px;
   padding-top: $heightHeaderMobile + px;
+  position: relative;
 
   @media (min-width: 576px) {
     height: 100vh;
-    padding-top: $heightHeaderDesktop + 110 + px;
+    padding-top: 2vh;
     margin-bottom: 0;
   }
 
@@ -59,10 +60,14 @@
   }
 
   .item {
-    margin-top: 300px;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 0px);
 
     .mouse {
       border: 3px solid $text;
+      top: auto;
+      bottom: 0;
 
       &:before {
 

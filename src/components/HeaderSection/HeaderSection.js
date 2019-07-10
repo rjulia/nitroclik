@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ResponsiveImage , HeadTitle} from "../index.components";
+import { ResponsiveImage, HeadTitle } from "../index.components";
 import styled from 'styled-components';
 import "./HeaderSection.scss";
 
@@ -21,12 +21,12 @@ const ResponsiveImageW100 = styled(ResponsiveImage)`
 
 class HeaderSection extends Component {
   render() {
-    const {images, title, subtitle} = this.props;
+    const { images, title, subtitle } = this.props;
     return (
       <div className="header-section__container">
-         <ResponsiveImageW100 images={images}/>
+        <ResponsiveImageW100 images={images} />
         <div className="header-section__title">
-          <HeadTitle color={''} lineColor={''} title={title}/>
+          <HeadTitle color={''} lineColor={''} title={title} />
           <h1>{subtitle}</h1>
         </div>
       </div>
