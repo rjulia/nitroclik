@@ -7,6 +7,7 @@ import WhatWeAre from './components/WhatWeAre';
 import WhoWeAre from './components/WhoWeAre'
 import "./AboutUs.scss"
 import _ from "lodash";
+import HowWeWork from './components/HowWeWork';
 const images = {
   small: './assets/images/aboutusheader_340.jpg',
   medium: './assets/images/aboutusheader.jpg',
@@ -31,9 +32,10 @@ class AboutUs extends Component {
         />
         <div className="container about-us">
           <div className="row">
-            <p
+            <HowWeWork />
+            {/* <p
               dangerouslySetInnerHTML={{ __html: localization.aboutUs.text }}
-              className="about__description" />
+              className="about__description" /> */}
             <WhatWeAre />
             <WhoWeAre />
 

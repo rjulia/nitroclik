@@ -4,7 +4,7 @@ import Logo from "./components/Logo";
 import MainMenuMobile from "./components/MainMenuMobile";
 import MainMenuDesktop from "./components/MainMenuDesktop";
 import styled from 'styled-components';
-import { withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import { ButtonLanguage } from '../../Components/index.components';
 
 
@@ -74,7 +74,13 @@ class Header extends Component {
     return (
       <div className={`container__header d-flex justify-content-center row ${this.state.classAdd} ${this.state.classUrl}`} >
         <div className="header">
-          <Logo />
+          <NavLink
+            exact={true}
+            to="/"
+          >
+            <Logo />
+
+          </NavLink>
           <div className="btn-language__mobile">
             <ButtonLanguage />
           </div>

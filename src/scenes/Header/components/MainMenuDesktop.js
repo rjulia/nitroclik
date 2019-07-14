@@ -19,21 +19,15 @@ class MainMenuDesktop extends Component {
     return (
       <div className="header__menu--desktop">
         <ul className="menu__list">
-          <NavLink
-            exact={true}
-            to="/"
-            className="menu__list--item"
-          >
-            {_.toUpper(localization.getString('homes'))}
+          <NavLink exact={true} to="/aboutus" className="menu__list--item" isActive={isActive.bind(this, `/aboutus`)}>
+            {_.toUpper(localization.menu.aboutus)}
           </NavLink>
+
           <NavLink exact={true} to="/porfolio" className="menu__list--item" isActive={isActive.bind(this, `/porfolio`)} >
             {_.toUpper(localization.menu.porfolio)}
           </NavLink>
           <NavLink exact={true} to="/services" className="menu__list--item" isActive={isActive.bind(this, `/services`)}>
             {_.toUpper(localization.menu.services)}
-          </NavLink>
-          <NavLink exact={true} to="/aboutus" className="menu__list--item" isActive={isActive.bind(this, `/aboutus`)}>
-            {_.toUpper(localization.menu.aboutus)}
           </NavLink>
           {/* <NavLink className="menu__list--item">
           <p to="/blog">{_.toUpper(localization.menu.blog)}

@@ -67,7 +67,8 @@ const en = {
     who: 'who we are',
     button_open: 'Open Bio',
     button_closed: 'Close',
-    about: "what we are"
+    about: "what we are",
+    how: "How we work"
 
   },
   contact: {

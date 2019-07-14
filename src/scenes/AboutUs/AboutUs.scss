@@ -4,7 +4,7 @@
   //height: 100vh;
   height: auto;
   display: block;
-  padding-top: $heightHeaderMobile + px;
+  padding-top: 40px;
 
   .about__description {
     font-size: 20px;
@@ -14,12 +14,69 @@
     padding: 20px;
   }
 
+  .how__section {
+    padding: 0;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+
+    .how__box {
+      text-align: center;
+      background-color: $mainColor;
+      padding: 0px 20px 10px;
+
+      p {
+        color: $white;
+        font-family: $general;
+      }
+
+      h3 {
+        font-family: $outstanding;
+        color: $white;
+        font-weight: 700;
+        font-size: 24px;
+        padding: 8px;
+        border-top: 1px $white solid;
+        border-bottom: 1px $white solid;
+
+      }
+
+    }
+
+    >.col-md-4 {
+      padding: 20px;
+
+      &:nth-child(3) .how__box {
+        background-color: $web;
+      }
+
+      &:nth-child(8) .how__box {
+        background-color: $marketing;
+      }
+
+      &:nth-child(5) .how__box {
+        background-color: $photo;
+      }
+
+      &:nth-child(6) .how__box {
+        background-color: $grafhic;
+      }
+
+      &:nth-child(7) .how__box {
+        background-color: $brand;
+      }
+    }
+
+  }
+
   .headTitle {
     height: 58px;
     padding: 0 2px;
 
+    margin-bottom: 20px;
+
     .headTitle__text {
-      font-size: 2.9rem;
+      font-size: 2.6rem;
     }
   }
 
@@ -31,6 +88,10 @@
     .about__description {
       font-size: 24px;
 
+    }
+
+    .how__section {
+      padding: 50px 0;
     }
 
     .headTitle {
